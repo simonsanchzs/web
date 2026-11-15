@@ -6,6 +6,10 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
+      "archivo": "foto-1794744952731-3.jpg",
+      "pie": "Mujer aguanta bandera del sindicato en plena huelga general en barcelona"
+    },
+    {
       "archivo": "foto-1794742872577-1.jpg",
       "pie": "Vito Quiles llega a la universidad autónoma de Barcelona."
     }
