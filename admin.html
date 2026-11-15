@@ -69,6 +69,8 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
   <label for="f-menu">Texto del enlace a la info (esquina superior derecha)</label><input id="f-menu">
   <label for="f-insta">Enlace de Instagram</label><input id="f-insta" inputmode="url">
   <label for="f-mail">Email de contacto</label><input id="f-mail" inputmode="email">
+  <label for="f-seg">Segundos entre una foto y la siguiente (pase automático)</label><input id="f-seg" type="number" inputmode="decimal" min="0" step="0.5">
+  <p class="aviso">Pon 0 para desactivar el pase automático.</p>
   <label for="f-info">Texto de la página de info</label>
   <textarea id="f-info" rows="16"></textarea>
   <p class="aviso">Cada línea es un párrafo. Una línea con tres guiones (---) dibuja una línea separadora. Para un enlace: [texto](https://direccion.com)</p>
@@ -140,6 +142,7 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
       $("titulo").textContent = "Panel · " + (datos.nombre || "");
       $("f-nombre").value = datos.nombre || ""; $("f-menu").value = datos.textoMenu || "";
       $("f-insta").value = datos.instagram || ""; $("f-mail").value = datos.email || "";
+      $("f-seg").value = typeof datos.segundos === "number" ? datos.segundos : 5;
       $("f-info").value = (datos.info || []).map(function(b){ return b.join("\n"); }).join("\n---\n");
       pintar(); estado("Sin cambios."); $("btnPublicar").disabled = true;
     }).catch(function(e){
@@ -200,7 +203,7 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
       window.scrollTo(0, 0);
     });
   });
-  ["f-nombre","f-menu","f-insta","f-mail","f-info"].forEach(function(id){ $(id).addEventListener("input", marcar); });
+  ["f-nombre","f-menu","f-insta","f-mail","f-seg","f-info"].forEach(function(id){ $(id).addEventListener("input", marcar); });
 
   // ---------- Ajustes ----------
   $("btnConectar").addEventListener("click", function(){
@@ -233,6 +236,8 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
   function recoger(){
     datos.nombre = $("f-nombre").value.trim(); datos.textoMenu = $("f-menu").value.trim();
     datos.instagram = $("f-insta").value.trim(); datos.email = $("f-mail").value.trim();
+    var seg = parseFloat(String($("f-seg").value).replace(",", "."));
+    datos.segundos = isNaN(seg) || seg < 0 ? 5 : seg;
     datos.info = $("f-info").value.split(/\n\s*---+\s*\n?/).map(function(b){ return b.split("\n").map(function(l){ return l.trim(); }).filter(Boolean); }).filter(function(b){ return b.length; });
     datos.fotos = items.map(function(it){ return { archivo: it.archivo, pie: it.pie.trim() }; });
     return "/* Este archivo lo escribe el panel de gestión. No hace falta editarlo a mano. */\nwindow.CONTENIDO = " + JSON.stringify(datos, null, 2) + ";\n";

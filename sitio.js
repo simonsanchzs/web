@@ -35,12 +35,12 @@
   function ruta(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/" + encodeURIComponent(f.archivo); }
   function cerrar(){ marco.classList.remove("abierto"); }
 
-  // Pase automático: avanza sola cada 5 segundos. Cualquier toque reinicia la cuenta.
+  // Pase automático: avanza sola cada X segundos (se ajusta en el panel; 0 lo desactiva). Cualquier toque reinicia la cuenta.
   // Se detiene mientras el pie de foto está abierto o se está viendo la página de info.
-  var SEGUNDOS = 5, reloj = null;
+  var SEGUNDOS = (typeof C.segundos === "number" && C.segundos >= 0) ? C.segundos : 5, reloj = null;
   function programar(){
     clearTimeout(reloj);
-    if (fotos.length < 2) return;
+    if (fotos.length < 2 || !SEGUNDOS) return;
     reloj = setTimeout(function(){
       if (enInfo() || document.hidden || marco.classList.contains("abierto")) programar(); else sig();
     }, SEGUNDOS * 1000);
