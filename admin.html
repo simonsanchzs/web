@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Portafolio">
+<title>Panel del portafolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;line-height:20px;color:#000;background:#fff;padding-bottom:96px;-webkit-text-size-adjust:100%}
+button,input,textarea,select{font:inherit;color:inherit;border-radius:0}
+input,textarea,select{font-size:16px;width:100%;border:1px solid #000;background:#fff;padding:10px}
+textarea{resize:vertical;min-height:44px;display:block}
+label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;margin:14px 0 4px}
+.btn{border:1px solid #000;background:#fff;padding:10px 14px;cursor:pointer;text-transform:uppercase;font-size:12px;letter-spacing:.04em}
+.btn.negro{background:#000;color:#fff}
+.btn:disabled{opacity:.4;cursor:default}
+.wrap{max-width:640px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid #000}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:48px}
+header b{font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+nav{display:flex;gap:16px}
+nav button{background:none;border:0;padding:14px 0;font-size:12px;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;color:#888}
+nav button.on{color:#000;box-shadow:inset 0 -2px 0 #000}
+.aviso{font-size:12px;background:#f2f2f2;padding:10px 12px;margin-top:16px}
+.aviso.demo{background:#fff6cc}
+section{padding-top:16px}
+[hidden]{display:none!important}
+.anadir{width:100%;padding:16px;margin-bottom:16px}
+.foto{display:flex;gap:12px;border:1px solid #000;padding:10px;margin-bottom:10px;background:#fff}
+.foto.sortable-ghost{opacity:.3}
+.asa{flex:0 0 28px;display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:none;font-size:18px;color:#888;user-select:none;-webkit-user-select:none}
+.mini{flex:0 0 96px}
+.mini img{display:block;width:96px;max-height:144px;object-fit:cover;background:#eee}
+.mini span{display:block;font-size:10px;color:#888;margin-top:4px;text-align:center}
+.datos{flex:1;min-width:0}
+.datos label:first-child{margin-top:0}
+.fila{display:flex;gap:8px;align-items:center;margin-top:8px}
+.fila select{flex:1;padding:8px}
+.fila .btn{padding:8px 10px;white-space:nowrap}
+.encuadre{margin-top:8px}
+.encuadre input{padding:0;border:0}
+.barra{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #000;padding:12px 0 calc(12px + env(safe-area-inset-bottom))}
+.barra .wrap{display:flex;align-items:center;gap:12px}
+.barra p{flex:1;font-size:12px;line-height:16px}
+.vacio{text-align:center;color:#888;padding:32px 0}
+ol.pasos{margin:8px 0 0 18px;font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><b id="titulo">Panel</b>
+<nav><button data-t="fotos" class="on">Fotos</button><button data-t="info">Info</button><button data-t="ajustes">Ajustes</button></nav></div></header>
+
+<div class="wrap">
+<p class="aviso demo" id="avisoDemo" hidden>Modo demostración: puedes probarlo todo, pero nada se publica todavía.</p>
+
+<section id="v-fotos">
+  <button class="btn negro anadir" id="btnAnadir">+ Añadir fotos</button>
+  <input type="file" id="archivo" accept="image/*" multiple hidden>
+  <div id="lista"></div>
+  <p class="vacio" id="vacio" hidden>Todavía no hay fotos.</p>
+</section>
+
+<section id="v-info" hidden>
+  <label for="f-nombre">Nombre (esquina superior izquierda)</label><input id="f-nombre">
+  <label for="f-menu">Texto del enlace a la info (esquina superior derecha)</label><input id="f-menu">
+  <label for="f-insta">Enlace de Instagram</label><input id="f-insta" inputmode="url">
+  <label for="f-mail">Email de contacto</label><input id="f-mail" inputmode="email">
+  <label for="f-info">Texto de la página de info</label>
+  <textarea id="f-info" rows="16"></textarea>
+  <p class="aviso">Cada línea es un párrafo. Una línea con tres guiones (---) dibuja una línea separadora. Para un enlace: [texto](https://direccion.com)</p>
+</section>
+
+<section id="v-ajustes" hidden>
+  <p class="aviso">Esto se rellena una sola vez en cada dispositivo. La clave se guarda solo en este dispositivo.</p>
+  <label for="c-user">Usuario de GitHub</label><input id="c-user" autocapitalize="off" autocomplete="off">
+  <label for="c-repo">Repositorio</label><input id="c-repo" autocapitalize="off" autocomplete="off">
+  <label for="c-token">Clave de acceso</label><input id="c-token" type="password" autocomplete="off">
+  <div class="fila" style="margin-top:16px"><button class="btn negro" id="btnConectar">Guardar y conectar</button><button class="btn" id="btnOlvidar">Desconectar</button></div>
+  <p class="aviso" id="estadoConexion">Sin conectar.</p>
+</section>
+</div>
+
+<div class="barra"><div class="wrap"><p id="estado">Sin cambios.</p><button class="btn negro" id="btnPublicar" disabled>Publicar</button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var BASE = "";
+  var API = "https://api.github.com";
+  var PROPORCIONES = [["original","Original"],["2:3","2:3 vertical"],["3:4","3:4 vertical"],["4:5","4:5 vertical"],["1:1","1:1 cuadrada"],["5:4","5:4 horizontal"],["4:3","4:3 horizontal"],["3:2","3:2 horizontal"],["16:9","16:9 panorámica"]];
+  var LADO_MAX = 2400, CALIDAD = 0.88;
+
+  var datos = null, items = [], borrar = [], subidas = [], sucio = false, ocupado = false, seq = 0;
+  var cfg = leerCfg();
+
+  function leerCfg(){ try { return JSON.parse(localStorage.getItem("portafolio-cfg")) || {}; } catch(e){ return {}; } }
+  var PREDET = { user: "simonsanchzs", repo: "web" };
+  function guardarCfg(){ try { localStorage.setItem("portafolio-cfg", JSON.stringify(cfg)); } catch(e){} }
+  function conectado(){ return !!(cfg.user && cfg.repo && cfg.token); }
+  function estado(t){ $("estado").textContent = t; }
+  function marcar(){ sucio = true; $("btnPublicar").disabled = ocupado; estado("Hay cambios sin publicar."); }
+
+  // ---------- GitHub ----------
+  function gh(ruta, opt){
+    opt = opt || {};
+    return fetch(API + "/repos/" + cfg.user + "/" + cfg.repo + ruta, {
+      method: opt.method || "GET",
+      headers: { "Authorization": "Bearer " + cfg.token, "Accept": opt.raw ? "application/vnd.github.raw" : "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" },
+      body: opt.body ? JSON.stringify(opt.body) : undefined
+    }).then(function(r){
+      if (!r.ok) return r.text().then(function(t){ var m = t; try { m = JSON.parse(t).message; } catch(e){} throw new Error(r.status + " " + m); });
+      return opt.raw ? r.text() : r.json();
+    });
+  }
+  function interpretar(texto){ var w = {}; new Function("window", texto)(w); return w.CONTENIDO; }
+
+  // ---------- Carga ----------
+  function cargarLocal(){
+    return new Promise(function(ok, mal){
+      var s = document.createElement("script"); s.src = BASE + "contenido.js?" + Date.now();
+      s.onload = function(){ ok(window.CONTENIDO); }; s.onerror = function(){ mal(new Error("No se pudo leer el contenido")); };
+      document.head.appendChild(s);
+    });
+  }
+  function iniciar(){
+    $("avisoDemo").hidden = conectado();
+    $("c-user").value = cfg.user || PREDET.user; $("c-repo").value = cfg.repo || PREDET.repo; $("c-token").value = cfg.token || "";
+    estado("Cargando…");
+    var p = conectado()
+      ? gh("/contents/contenido.js", { raw: true }).then(interpretar).then(function(d){ $("estadoConexion").textContent = "Conectado a " + cfg.user + "/" + cfg.repo + "."; return d; })
+      : cargarLocal();
+    p.then(function(d){
+      datos = d || {}; borrar = []; sucio = false;
+      items = (datos.fotos || []).map(function(f){ return { id: ++seq, archivo: f.archivo, url: BASE + "fotos/" + encodeURIComponent(f.archivo), pie: f.pie || "", ratio: "original", pos: 50, file: null }; });
+      $("titulo").textContent = "Panel · " + (datos.nombre || "");
+      $("f-nombre").value = datos.nombre || ""; $("f-menu").value = datos.textoMenu || "";
+      $("f-insta").value = datos.instagram || ""; $("f-mail").value = datos.email || "";
+      $("f-info").value = (datos.info || []).map(function(b){ return b.join("\n"); }).join("\n---\n");
+      pintar(); estado("Sin cambios."); $("btnPublicar").disabled = true;
+    }).catch(function(e){
+      estado("Error al cargar: " + e.message);
+      if (conectado()) $("estadoConexion").textContent = "No se pudo conectar: " + e.message;
+    });
+  }
+
+  // ---------- Lista de fotos ----------
+  function css(r){ return r === "original" ? "auto" : r.replace(":", " / "); }
+  function pintar(){
+    var L = $("lista"); L.innerHTML = "";
+    $("vacio").hidden = items.length > 0;
+    items.forEach(function(it, n){
+      var d = document.createElement("div"); d.className = "foto"; d.dataset.id = it.id;
+      d.innerHTML =
+        '<div class="asa" title="Arrastra para reordenar">☰</div>' +
+        '<div class="mini"><img alt=""><span></span></div>' +
+        '<div class="datos"><label>Pie de foto</label><textarea rows="2" placeholder="Sin pie de foto"></textarea>' +
+        '<div class="fila"><select aria-label="Proporción"></select><button class="btn" data-a="borrar">Eliminar</button></div>' +
+        '<div class="encuadre" hidden><label>Encuadre</label><input type="range" min="0" max="100"></div></div>';
+      var img = d.querySelector("img"), ta = d.querySelector("textarea"), sel = d.querySelector("select"), enc = d.querySelector(".encuadre"), rg = enc.querySelector("input");
+      d.querySelector(".mini span").textContent = (n + 1) + " de " + items.length + (it.file ? " · nueva" : "");
+      img.src = it.url; ta.value = it.pie; rg.value = it.pos;
+      PROPORCIONES.forEach(function(p){ var o = document.createElement("option"); o.value = p[0]; o.textContent = p[1]; sel.appendChild(o); });
+      sel.value = it.ratio;
+      function vista(){ img.style.aspectRatio = css(it.ratio); img.style.objectPosition = it.pos + "% " + it.pos + "%"; enc.hidden = it.ratio === "original"; }
+      vista();
+      ta.addEventListener("input", function(){ it.pie = ta.value; marcar(); });
+      sel.addEventListener("change", function(){ it.ratio = sel.value; vista(); marcar(); });
+      rg.addEventListener("input", function(){ it.pos = +rg.value; vista(); marcar(); });
+      d.querySelector("[data-a=borrar]").addEventListener("click", function(e){
+        var b = e.currentTarget;
+        if (b.dataset.seguro) { if (it.archivo) borrar.push(it.archivo); items = items.filter(function(x){ return x !== it; }); pintar(); marcar(); }
+        else { b.dataset.seguro = "1"; b.textContent = "¿Seguro?"; b.classList.add("negro"); setTimeout(function(){ delete b.dataset.seguro; b.textContent = "Eliminar"; b.classList.remove("negro"); }, 3000); }
+      });
+      L.appendChild(d);
+    });
+  }
+  if (window.Sortable) new Sortable($("lista"), { handle: ".asa", animation: 150, onEnd: function(){
+    var orden = [].map.call($("lista").children, function(c){ return +c.dataset.id; });
+    items.sort(function(a, b){ return orden.indexOf(a.id) - orden.indexOf(b.id); });
+    pintar(); marcar();
+  }});
+
+  $("btnAnadir").addEventListener("click", function(){ $("archivo").click(); });
+  $("archivo").addEventListener("change", function(e){
+    var nuevas = [].map.call(e.target.files, function(f){ return { id: ++seq, archivo: null, url: URL.createObjectURL(f), pie: "", ratio: "original", pos: 50, file: f }; });
+    items = nuevas.concat(items);   // las nuevas entran al principio
+    e.target.value = ""; pintar(); if (nuevas.length) marcar();
+  });
+
+  // ---------- Pestañas ----------
+  [].forEach.call(document.querySelectorAll("nav button"), function(b){
+    b.addEventListener("click", function(){
+      [].forEach.call(document.querySelectorAll("nav button"), function(x){ x.classList.toggle("on", x === b); });
+      ["fotos","info","ajustes"].forEach(function(t){ $("v-" + t).hidden = t !== b.dataset.t; });
+      window.scrollTo(0, 0);
+    });
+  });
+  ["f-nombre","f-menu","f-insta","f-mail","f-info"].forEach(function(id){ $(id).addEventListener("input", marcar); });
+
+  // ---------- Ajustes ----------
+  $("btnConectar").addEventListener("click", function(){
+    cfg = { user: $("c-user").value.trim(), repo: $("c-repo").value.trim(), token: $("c-token").value.trim() };
+    if (!conectado()) { $("estadoConexion").textContent = "Rellena los tres campos."; return; }
+    $("estadoConexion").textContent = "Comprobando…";
+    gh("").then(function(){ guardarCfg(); iniciar(); }).catch(function(e){ $("estadoConexion").textContent = "No se pudo conectar: " + e.message; });
+  });
+  $("btnOlvidar").addEventListener("click", function(){ cfg = {}; try { localStorage.removeItem("portafolio-cfg"); } catch(e){} $("estadoConexion").textContent = "Sin conectar."; iniciar(); });
+
+  // ---------- Preparar imágenes ----------
+  function cargarImg(url){ return new Promise(function(ok, mal){ var i = new Image(); i.onload = function(){ ok(i); }; i.onerror = function(){ mal(new Error("No se pudo abrir una imagen")); }; i.src = url; }); }
+  function procesar(it){
+    return cargarImg(it.url).then(function(img){
+      var w = img.naturalWidth, h = img.naturalHeight, sx = 0, sy = 0, sw = w, sh = h;
+      if (it.ratio !== "original") {
+        var p = it.ratio.split(":"), R = p[0] / p[1];
+        if (w / h > R) { sw = Math.round(h * R); sx = Math.round((w - sw) * it.pos / 100); }
+        else { sh = Math.round(w / R); sy = Math.round((h - sh) * it.pos / 100); }
+      }
+      var k = Math.min(1, LADO_MAX / Math.max(sw, sh));
+      var c = document.createElement("canvas"); c.width = Math.round(sw * k); c.height = Math.round(sh * k);
+      var x = c.getContext("2d"); x.fillStyle = "#fff"; x.fillRect(0, 0, c.width, c.height);
+      x.drawImage(img, sx, sy, sw, sh, 0, 0, c.width, c.height);
+      return new Promise(function(ok){ c.toBlob(ok, "image/jpeg", CALIDAD); });
+    });
+  }
+  function base64(blob){ return new Promise(function(ok){ var r = new FileReader(); r.onload = function(){ ok(String(r.result).split(",")[1]); }; r.readAsDataURL(blob); }); }
+
+  function recoger(){
+    datos.nombre = $("f-nombre").value.trim(); datos.textoMenu = $("f-menu").value.trim();
+    datos.instagram = $("f-insta").value.trim(); datos.email = $("f-mail").value.trim();
+    datos.info = $("f-info").value.split(/\n\s*---+\s*\n?/).map(function(b){ return b.split("\n").map(function(l){ return l.trim(); }).filter(Boolean); }).filter(function(b){ return b.length; });
+    datos.fotos = items.map(function(it){ return { archivo: it.archivo, pie: it.pie.trim() }; });
+    return "/* Este archivo lo escribe el panel de gestión. No hace falta editarlo a mano. */\nwindow.CONTENIDO = " + JSON.stringify(datos, null, 2) + ";\n";
+  }
+
+  // ---------- Publicar ----------
+  $("btnPublicar").addEventListener("click", function(){
+    if (ocupado) return;
+    ocupado = true; $("btnPublicar").disabled = true;
+    var pendientes = items.filter(function(it){ return it.file || it.ratio !== "original"; });
+    var n = 0, cadena = Promise.resolve();
+    pendientes.forEach(function(it){
+      cadena = cadena.then(function(){
+        estado("Preparando foto " + (++n) + " de " + pendientes.length + "…");
+        return procesar(it);
+      }).then(function(blob){
+        var nombre = "foto-" + Date.now() + "-" + it.id + ".jpg";
+        function hecho(){
+          if (it.archivo) borrar.push(it.archivo);
+          it.archivo = nombre; it.file = null; it.ratio = "original"; it.pos = 50; it.url = URL.createObjectURL(blob);
+        }
+        if (!conectado()) { hecho(); return; }
+        estado("Subiendo foto " + n + " de " + pendientes.length + "…");
+        return base64(blob).then(function(b64){ return gh("/git/blobs", { method: "POST", body: { content: b64, encoding: "base64" } }); })
+          .then(function(r){ subidas.push({ path: "fotos/" + nombre, mode: "100644", type: "blob", sha: r.sha }); hecho(); });
+      });
+    });
+    cadena.then(function(){
+      var texto = recoger();
+      if (!conectado()) return "demo";
+      estado("Publicando…");
+      var rama, cabeza;
+      return gh("").then(function(r){ rama = r.default_branch; return gh("/git/ref/heads/" + rama); })
+        .then(function(r){ cabeza = r.object.sha; return gh("/git/commits/" + cabeza); })
+        .then(function(c){
+          var vivas = items.map(function(it){ return "fotos/" + it.archivo; });
+          var arbol = subidas.filter(function(s){ return vivas.indexOf(s.path) >= 0; }).concat([{ path: "contenido.js", mode: "100644", type: "blob", content: texto }]);
+          borrar.forEach(function(a){ if (!subidas.some(function(s){ return s.path === "fotos/" + a; })) arbol.push({ path: "fotos/" + a, mode: "100644", type: "blob", sha: null }); });
+          return gh("/git/trees", { method: "POST", body: { base_tree: c.tree.sha, tree: arbol } });
+        })
+        .then(function(t){ return gh("/git/commits", { method: "POST", body: { message: "Actualización desde el panel", tree: t.sha, parents: [cabeza] } }); })
+        .then(function(c){ return gh("/git/refs/heads/" + rama, { method: "PATCH", body: { sha: c.sha } }); });
+    }).then(function(r){
+      borrar = []; subidas = []; sucio = false; pintar();
+      estado(r === "demo" ? "Demostración: todo listo, pero no se ha publicado nada." : "Publicado. La web se actualizará en un minuto aproximadamente.");
+    }).catch(function(e){
+      pintar(); estado("No se pudo publicar: " + e.message); $("btnPublicar").disabled = false;
+    }).then(function(){ ocupado = false; });
+  });
+
+  window.addEventListener("beforeunload", function(e){ if (sucio) { e.preventDefault(); e.returnValue = ""; } });
+  iniciar();
+})();
+</script>
+</body>
+</html>

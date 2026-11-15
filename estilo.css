@@ -1,0 +1,33 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:"Open Sans",Arial,sans-serif;font-size:12px;line-height:16px;color:#000;background:#fff}
+a{color:#000;text-decoration:none}
+.esquina{position:fixed;z-index:1;line-height:16px;text-transform:uppercase;white-space:nowrap}
+.e-nombre{top:20px;left:20px}
+.e-menu{top:20px;right:20px}
+.e-insta{bottom:20px;left:20px;line-height:20px}
+.e-mail{bottom:20px;right:20px;line-height:20px}
+
+/* Portada: una foto cada vez */
+body.portada{overflow:hidden}
+.zona{position:fixed;top:0;bottom:0;width:50%;z-index:0}
+.zona-ant{left:0;cursor:w-resize}
+.zona-sig{right:0;cursor:e-resize}
+.pase{position:fixed;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;pointer-events:none}
+.marco{position:relative;display:block;line-height:0;pointer-events:auto;cursor:pointer}
+.marco img{display:block;max-width:90vw;max-height:100vh;max-height:100dvh;width:auto;height:auto;-webkit-user-drag:none}
+
+/* Pie de foto: aparece al pulsar sobre la foto */
+.velo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;line-height:20px;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+.velo p{max-width:46em;white-space:pre-line}
+.marco.abierto .velo{opacity:1;visibility:visible}
+/* Fondo negro liso al 65 %, cubre toda la foto */
+.velo{background:rgba(0,0,0,.65);padding:10%}
+
+/* Info */
+.info{padding:48px 0 60px;text-align:center}
+.info p{line-height:20px;margin:0 auto 20px;padding:0 20px;max-width:680px}
+.info hr{border:0;border-top:1px solid #000;margin:6px 0 8px}
+.info a{color:#00f}
+[hidden]{display:none!important}
+body:not(.portada) .zona{display:none}
