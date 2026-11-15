@@ -40,5 +40,6 @@ window.CONTENIDO = {
       "Instagram: [simonsanchzs](https://www.instagram.com/simonsanchzs/)",
       "Contacto: [simonsanchzs@gmail.com](mailto:simonsanchzs@gmail.com)"
     ]
-  ]
+  ],
+  "segundos": 10
 };
