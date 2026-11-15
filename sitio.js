@@ -29,11 +29,22 @@
     document.body.classList.toggle("portada", !v);
     window.scrollTo(0,0);
   }
-  window.addEventListener("hashchange", vista); vista();
+  window.addEventListener("hashchange", function(){ vista(); programar(); }); vista();
   if (!fotos.length) return;
 
   function ruta(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/" + encodeURIComponent(f.archivo); }
   function cerrar(){ marco.classList.remove("abierto"); }
+
+  // Pase automático: avanza sola cada 5 segundos. Cualquier toque reinicia la cuenta.
+  // Se detiene mientras el pie de foto está abierto o se está viendo la página de info.
+  var SEGUNDOS = 5, reloj = null;
+  function programar(){
+    clearTimeout(reloj);
+    if (fotos.length < 2) return;
+    reloj = setTimeout(function(){
+      if (enInfo() || document.hidden || marco.classList.contains("abierto")) programar(); else sig();
+    }, SEGUNDOS * 1000);
+  }
   function ver(n){
     i = (n + fotos.length) % fotos.length;
     var f = fotos[i];
@@ -42,6 +53,7 @@
     img.alt = f.pie || "";
     img.src = ruta(f);
     [1,2].forEach(function(k){ new Image().src = ruta(fotos[(i+k) % fotos.length]); });
+    programar();
   }
   function sig(){ ver(i+1); } function ant(){ ver(i-1); }
 
@@ -59,7 +71,7 @@
     if (enInfo() || e.target.closest("a")) return;
     if (arrastrado) { arrastrado = false; return; }
     if (e.target.closest("#marco")) {
-      if (fotos[i].pie) marco.classList.toggle("abierto"); else sig();
+      if (fotos[i].pie) { marco.classList.toggle("abierto"); programar(); } else sig();
       return;
     }
     e.clientX < window.innerWidth / 2 ? ant() : sig();
@@ -68,7 +80,7 @@
     if (enInfo()) return;
     if (e.key === "ArrowRight") sig();
     if (e.key === "ArrowLeft") ant();
-    if (e.key === "Escape") cerrar();
+    if (e.key === "Escape") { cerrar(); programar(); }
   });
 
   ver(0);
