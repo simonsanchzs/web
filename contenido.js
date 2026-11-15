@@ -4,7 +4,12 @@ window.CONTENIDO = {
   "textoMenu": "INFO",
   "instagram": "https://www.instagram.com/simonsanchzs/",
   "email": "simonsanchzs@gmail.com",
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "foto-1794742872577-1.jpg",
+      "pie": "Vito Quiles llega a la universidad autónoma de Barcelona."
+    }
+  ],
   "info": [
     [
       "Fotógrafo centrado en el fotoperiodismo y el reportaje documental. Estudios de formación general en IEFC, Barcelona, y de especialización periodística en la Universidad de Hannover, Alemania.",
