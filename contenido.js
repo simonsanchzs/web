@@ -6,6 +6,10 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
+      "archivo": "foto-1794746479308-3.jpg",
+      "pie": ""
+    },
+    {
       "archivo": "foto-1794744952731-3.jpg",
       "pie": "Mujer aguanta bandera del sindicato en plena huelga general en barcelona"
     },
