@@ -6,11 +6,11 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
-      "archivo": "foto-1794747986718-6.jpg",
+      "archivo": "foto-1794749316454-1.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794747989863-5.jpg",
+      "archivo": "foto-1794749318152-2.jpg",
       "pie": ""
     },
     {
@@ -18,7 +18,7 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794746479308-3.jpg",
+      "archivo": "foto-1794749319989-4.jpg",
       "pie": ""
     },
     {
