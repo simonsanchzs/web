@@ -6,10 +6,6 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
-      "archivo": "foto-1794749316454-1.jpg",
-      "pie": ""
-    },
-    {
       "archivo": "foto-1794749318152-2.jpg",
       "pie": ""
     },
