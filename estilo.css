@@ -15,7 +15,7 @@ body.portada{overflow:hidden}
 .zona-sig{right:0;cursor:e-resize}
 .pase{position:fixed;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;pointer-events:none}
 .marco{position:relative;display:block;line-height:0;pointer-events:auto;cursor:pointer}
-.marco img{display:block;max-width:90vw;max-height:100vh;max-height:100dvh;width:auto;height:auto;-webkit-user-drag:none}
+.marco img{display:block;max-width:90vw;max-height:calc(100vh - 112px);max-height:calc(100dvh - 112px);width:auto;height:auto;-webkit-user-drag:none}
 /* Móvil y tableta: la foto ocupa más ancho (márgenes laterales más estrechos) */
 @media only screen and (max-width:960px){.marco img{max-width:95vw}}
 
