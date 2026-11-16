@@ -46,14 +46,6 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794860035156-11.jpg",
-      "pie": ""
-    },
-    {
-      "archivo": "foto-1794860036687-13.jpg",
-      "pie": ""
-    },
-    {
       "archivo": "foto-1794860038130-28.jpg",
       "pie": ""
     },
@@ -82,10 +74,6 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794860049274-16.jpg",
-      "pie": ""
-    },
-    {
       "archivo": "foto-1794860050505-30.jpg",
       "pie": ""
     },
@@ -99,6 +87,10 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860054109-23.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794860049274-16.jpg",
       "pie": ""
     },
     {
