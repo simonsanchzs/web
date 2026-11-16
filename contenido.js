@@ -252,6 +252,22 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794866166798-62.jpg",
       "pie": ""
+    },
+    {
+      "archivo": "foto-1794866615066-66.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794866618131-67.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794866620510-68.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794866622495-69.jpg",
+      "pie": ""
     }
   ],
   "info": [
