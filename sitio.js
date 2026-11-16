@@ -20,12 +20,15 @@
   }).join("<hr>") + "<hr>";
 
   // Portada
+  var indice = null;
   var fotos = (C.fotos || []).filter(function(f){ return f && f.archivo; });
   var pase = $("pase"), marco = $("marco"), img = $("foto"), pie = $("pie"), i = 0;
   function enInfo(){ return location.hash === "#info"; }
   function vista(){
     var v = enInfo();
     info.hidden = !v; pase.hidden = v;
+    $("btnIndice").hidden = v || !fotos.length;
+    if (v && indiceAbierto()) cerrarIndice();
     document.body.classList.toggle("portada", !v);
     window.scrollTo(0,0);
   }
@@ -42,7 +45,7 @@
     clearTimeout(reloj);
     if (fotos.length < 2 || !SEGUNDOS) return;
     reloj = setTimeout(function(){
-      if (enInfo() || document.hidden || marco.classList.contains("abierto")) programar(); else sig();
+      if (enInfo() || document.hidden || indiceAbierto() || marco.classList.contains("abierto")) programar(); else sig();
     }, SEGUNDOS * 1000);
   }
   function ver(n){
@@ -61,14 +64,14 @@
   var x0 = null, arrastrado = false;
   document.addEventListener("pointerdown", function(e){ x0 = e.clientX; arrastrado = false; });
   document.addEventListener("pointerup", function(e){
-    if (x0 === null || enInfo()) { x0 = null; return; }
+    if (x0 === null || enInfo() || indiceAbierto()) { x0 = null; return; }
     var d = e.clientX - x0; x0 = null;
     if (Math.abs(d) > 40) { arrastrado = true; d < 0 ? sig() : ant(); }
   });
 
   // Clic sobre la foto: muestra/oculta el pie. Clic fuera: anterior (izquierda) o siguiente (derecha).
   document.addEventListener("click", function(e){
-    if (enInfo() || e.target.closest("a")) return;
+    if (enInfo() || e.target.closest("a, #btnIndice, #indice")) return;
     if (arrastrado) { arrastrado = false; return; }
     if (e.target.closest("#marco")) {
       if (fotos[i].pie) { marco.classList.toggle("abierto"); programar(); } else sig();
@@ -78,10 +81,63 @@
   });
   document.addEventListener("keydown", function(e){
     if (enInfo()) return;
+    if (e.key === "Escape") { if (indiceAbierto()) cerrarIndice(); else { cerrar(); programar(); } return; }
+    if (indiceAbierto()) { if (e.key === "ArrowRight") mostrarPagina(pagina + 1); if (e.key === "ArrowLeft") mostrarPagina(pagina - 1); return; }
     if (e.key === "ArrowRight") sig();
     if (e.key === "ArrowLeft") ant();
-    if (e.key === "Escape") { cerrar(); programar(); }
   });
+
+  // Collage con todas las fotos (botón del dado), de 20 en 20. Tocar una foto va directamente a ella; tocar fuera vuelve a la foto actual.
+  var PAG = 20, pagina = 0;
+  indice = $("indice"); var rejilla = $("rejilla");
+  function indiceAbierto(){ return !!indice && !indice.hidden; }
+  function miniatura(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/min/" + encodeURIComponent(f.archivo); }
+  function totalPaginas(){ return Math.ceil(fotos.length / PAG); }
+  function mostrarPagina(p){
+    pagina = Math.max(0, Math.min(totalPaginas() - 1, p));
+    rejilla.innerHTML = "";
+    var desde = pagina * PAG, hasta = Math.min(fotos.length, desde + PAG);
+    for (var n = desde; n < hasta; n++) (function(n){
+      var f = fotos[n];
+      var b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", "Foto " + (n + 1));
+      if (n === i) b.className = "actual";
+      var im = document.createElement("img"); im.alt = ""; im.decoding = "async";
+      im.onerror = function(){ im.onerror = null; im.src = ruta(f); };   // si una foto aún no tiene miniatura, usa la grande
+      im.src = miniatura(f);
+      b.appendChild(im);
+      b.addEventListener("click", function(){ if (deslizado) { deslizado = false; return; } cerrarIndice(true); ver(n); });
+      rejilla.appendChild(b);
+    })(n);
+    $("pagAnt").hidden = pagina === 0; $("pagSig").hidden = pagina >= totalPaginas() - 1;
+    $("pagNum").textContent = totalPaginas() > 1 ? (pagina + 1) + " / " + totalPaginas() : "";
+    // Precarga las miniaturas de la página siguiente
+    for (var m = hasta; m < Math.min(fotos.length, hasta + PAG); m++) new Image().src = miniatura(fotos[m]);
+  }
+  function abrirIndice(){
+    cerrar();
+    mostrarPagina(Math.floor(i / PAG));
+    indice.hidden = false; document.body.classList.add("indice-abierto");
+  }
+  function cerrarIndice(sinProgramar){
+    indice.hidden = true; document.body.classList.remove("indice-abierto");
+    if (sinProgramar !== true) programar();
+  }
+  $("btnIndice").addEventListener("click", function(){ indiceAbierto() ? cerrarIndice() : abrirIndice(); });
+  $("pagAnt").addEventListener("click", function(){ mostrarPagina(pagina - 1); });
+  $("pagSig").addEventListener("click", function(){ mostrarPagina(pagina + 1); });
+  indice.addEventListener("click", function(e){
+    if (deslizado) { deslizado = false; return; }
+    if (e.target === indice || e.target === rejilla) cerrarIndice();
+  });
+  // Deslizar el dedo dentro del collage también cambia de página
+  var deslizado = false, xi = null;
+  indice.addEventListener("pointerdown", function(e){ xi = e.clientX; deslizado = false; });
+  indice.addEventListener("pointerup", function(e){
+    if (xi === null) return;
+    var d = e.clientX - xi; xi = null;
+    if (Math.abs(d) > 50) { deslizado = true; mostrarPagina(pagina + (d < 0 ? 1 : -1)); }
+  });
+  $("btnIndice").hidden = enInfo();
 
   ver(0);
 })();

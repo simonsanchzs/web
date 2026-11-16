@@ -281,6 +281,16 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
       return new Promise(function(ok){ c.toBlob(ok, "image/jpeg", CALIDAD); });
     });
   }
+  function miniatura(blob){
+    var u = URL.createObjectURL(blob);
+    return cargarImg(u).then(function(im){
+      URL.revokeObjectURL(u);
+      var k = Math.min(1, 480 / Math.max(im.naturalWidth, im.naturalHeight));
+      var c = document.createElement("canvas"); c.width = Math.round(im.naturalWidth * k); c.height = Math.round(im.naturalHeight * k);
+      c.getContext("2d").drawImage(im, 0, 0, c.width, c.height);
+      return new Promise(function(ok){ c.toBlob(ok, "image/jpeg", 0.8); });
+    });
+  }
   function base64(blob){ return new Promise(function(ok){ var r = new FileReader(); r.onload = function(){ ok(String(r.result).split(",")[1]); }; r.readAsDataURL(blob); }); }
 
   function recoger(){
@@ -312,20 +322,26 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
         if (!conectado()) { hecho(); return; }
         estado("Subiendo foto " + n + " de " + pendientes.length + "…");
         return base64(blob).then(function(b64){ return gh("/git/blobs", { method: "POST", body: { content: b64, encoding: "base64" } }); })
-          .then(function(r){ subidas.push({ path: "fotos/" + nombre, mode: "100644", type: "blob", sha: r.sha }); hecho(); });
+          .then(function(r){ subidas.push({ path: "fotos/" + nombre, mode: "100644", type: "blob", sha: r.sha }); return miniatura(blob); })
+          .then(function(mb){ return base64(mb); })
+          .then(function(b64){ return gh("/git/blobs", { method: "POST", body: { content: b64, encoding: "base64" } }); })
+          .then(function(r){ subidas.push({ path: "fotos/min/" + nombre, mode: "100644", type: "blob", sha: r.sha }); hecho(); });
       });
     });
     cadena.then(function(){
       var texto = recoger();
       if (!conectado()) return "demo";
       estado("Publicando…");
-      var rama, cabeza;
-      return gh("").then(function(r){ rama = r.default_branch; return gh("/git/ref/heads/" + rama); })
+      var rama, cabeza, minis = [];
+      return gh("/contents/fotos/min").then(function(l){ minis = l.map(function(x){ return x.name; }); }, function(){ minis = []; })
+        .then(function(){ return gh(""); }).then(function(r){ rama = r.default_branch; return gh("/git/ref/heads/" + rama); })
         .then(function(r){ cabeza = r.object.sha; return gh("/git/commits/" + cabeza); })
         .then(function(c){
-          var vivas = items.map(function(it){ return "fotos/" + it.archivo; });
+          var vivas = [];
+          items.forEach(function(it){ vivas.push("fotos/" + it.archivo, "fotos/min/" + it.archivo); });
           var arbol = subidas.filter(function(s){ return vivas.indexOf(s.path) >= 0; }).concat([{ path: "contenido.js", mode: "100644", type: "blob", content: texto }]);
           borrar.forEach(function(a){ if (!subidas.some(function(s){ return s.path === "fotos/" + a; })) arbol.push({ path: "fotos/" + a, mode: "100644", type: "blob", sha: null }); });
+          borrar.forEach(function(a){ if (minis.indexOf(a) >= 0 && !subidas.some(function(s){ return s.path === "fotos/min/" + a; })) arbol.push({ path: "fotos/min/" + a, mode: "100644", type: "blob", sha: null }); });
           return gh("/git/trees", { method: "POST", body: { base_tree: c.tree.sha, tree: arbol } });
         })
         .then(function(t){ return gh("/git/commits", { method: "POST", body: { message: "Actualización desde el panel", tree: t.sha, parents: [cabeza] } }); })

@@ -26,6 +26,28 @@ body.portada{overflow:hidden}
 /* Fondo negro liso al 65 %, cubre toda la foto */
 .velo{background:rgba(0,0,0,.65);padding:10%}
 
+/* Botón del dado (centro, abajo) y collage de todas las fotos */
+.e-indice{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);width:48px;height:36px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;color:#000;cursor:pointer;z-index:11;-webkit-tap-highlight-color:transparent}
+body.indice-abierto .e-indice{color:#fff}
+body.indice-abierto .esquina{visibility:hidden}
+/* Fondo negro al 65 %, como los pies de foto. Páginas de 20 fotos que caben enteras en pantalla */
+.indice{position:fixed;inset:0;z-index:10;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;
+  --c:5;--r:4;--gap:6px;--px:200px;--py:140px;
+  --t:min(calc((100vw - var(--px) - (var(--c) - 1) * var(--gap)) / var(--c)), calc((100vh - var(--py) - (var(--r) - 1) * var(--gap)) / var(--r)))}
+@supports (height:100dvh){.indice{--t:min(calc((100vw - var(--px) - (var(--c) - 1) * var(--gap)) / var(--c)), calc((100dvh - var(--py) - (var(--r) - 1) * var(--gap)) / var(--r)))}}
+@media (orientation:portrait){.indice{--c:4;--r:5}}
+@media only screen and (max-width:600px){.indice{--px:92px;--gap:5px}}
+@media only screen and (max-width:600px) and (orientation:portrait){.indice{--c:3;--r:7}}
+@media only screen and (max-height:500px){.indice{--py:90px}}
+.rejilla{display:grid;grid-template-columns:repeat(var(--c),var(--t));grid-auto-rows:var(--t);gap:var(--gap)}
+.rejilla button{display:block;width:100%;height:100%;padding:0;border:0;background:#333;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.rejilla img{display:block;width:100%;height:100%;object-fit:cover}
+.rejilla .actual{outline:2px solid #fff;outline-offset:2px}
+.pag{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:72px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;color:#fff;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.pag-ant{left:10px}.pag-sig{right:10px}
+@media only screen and (max-width:600px){.pag{width:40px;left:auto}.pag-ant{left:2px}.pag-sig{right:2px}}
+.pag-num{position:absolute;top:20px;left:0;right:0;text-align:center;color:#fff;font-size:12px;line-height:16px;letter-spacing:.04em;pointer-events:none}
+
 /* Info */
 .info{padding:48px 0 60px;text-align:center}
 .info p{line-height:20px;margin:0 auto 20px;padding:0 20px;max-width:680px}
