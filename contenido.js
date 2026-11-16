@@ -23,7 +23,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794742872577-1.jpg",
-      "pie": "Vito Quiles llega a la universidad autónoma de Barcelona."
+      "pie": ""
     }
   ],
   "info": [
