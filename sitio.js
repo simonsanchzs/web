@@ -89,9 +89,25 @@
 
   // Collage con todas las fotos (botón del dado), de 20 en 20. Tocar una foto va directamente a ella; tocar fuera vuelve a la foto actual.
   var PAG = 20, pagina = 0;
-  indice = $("indice"); var rejilla = $("rejilla");
+  indice = $("indice"); var rejilla = $("rejilla"), panel = $("panel");
   function indiceAbierto(){ return !!indice && !indice.hidden; }
   function miniatura(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/min/" + encodeURIComponent(f.archivo); }
+  // El panel ocupa exactamente el marco de la foto; la rejilla elige las columnas y filas que dan miniaturas más grandes
+  var FORMAS = [[5,4],[4,5],[6,4],[7,3],[3,7],[10,2],[2,10]], GAP = 5;
+  function ajustar(){
+    var r = marco.getBoundingClientRect();
+    panel.style.left = r.left + "px"; panel.style.top = r.top + "px"; panel.style.width = r.width + "px"; panel.style.height = r.height + "px";
+    var px = r.width < 500 ? 30 : 48, W = r.width - 2 * px, H = r.height - 28 - 10, mejor = null;
+    FORMAS.forEach(function(f){
+      var t = Math.floor(Math.min((W - (f[0] - 1) * GAP) / f[0], (H - (f[1] - 1) * GAP) / f[1]));
+      if (!mejor || t > mejor.t) mejor = { c: f[0], t: t };
+    });
+    var t = Math.max(24, mejor.t);
+    rejilla.style.gridTemplateColumns = "repeat(" + mejor.c + "," + t + "px)";
+    rejilla.style.gridAutoRows = t + "px";
+    rejilla.style.marginTop = "14px";
+  }
+  window.addEventListener("resize", function(){ if (indiceAbierto()) ajustar(); });
   function totalPaginas(){ return Math.ceil(fotos.length / PAG); }
   function mostrarPagina(p){
     pagina = Math.max(0, Math.min(totalPaginas() - 1, p));
@@ -117,6 +133,7 @@
     cerrar();
     mostrarPagina(Math.floor(i / PAG));
     indice.hidden = false; document.body.classList.add("indice-abierto");
+    ajustar();
   }
   function cerrarIndice(sinProgramar){
     indice.hidden = true; document.body.classList.remove("indice-abierto");
@@ -127,7 +144,7 @@
   $("pagSig").addEventListener("click", function(){ mostrarPagina(pagina + 1); });
   indice.addEventListener("click", function(e){
     if (deslizado) { deslizado = false; return; }
-    if (e.target === indice || e.target === rejilla) cerrarIndice();
+    if (e.target === indice || e.target === panel || e.target === rejilla) cerrarIndice();
   });
   // Deslizar el dedo dentro del collage también cambia de página
   var deslizado = false, xi = null;
