@@ -6,163 +6,163 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
-      "archivo": "foto-1794859222283-1.jpg",
+      "archivo": "foto-1794860020343-1.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859224373-2.jpg",
+      "archivo": "foto-1794860022141-2.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859879924-20.jpg",
+      "archivo": "foto-1794860023757-20.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859233648-8.jpg",
+      "archivo": "foto-1794860025431-8.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859881662-14.jpg",
+      "archivo": "foto-1794860026886-14.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859883789-18.jpg",
+      "archivo": "foto-1794860027967-18.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859885235-15.jpg",
+      "archivo": "foto-1794860029398-15.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859886577-24.jpg",
+      "archivo": "foto-1794860030431-24.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859887606-12.jpg",
+      "archivo": "foto-1794860032266-12.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859889321-25.jpg",
+      "archivo": "foto-1794860033800-25.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859891193-11.jpg",
+      "archivo": "foto-1794860035156-11.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859892814-13.jpg",
+      "archivo": "foto-1794860036687-13.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859893849-28.jpg",
+      "archivo": "foto-1794860038130-28.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859894869-19.jpg",
+      "archivo": "foto-1794860039538-19.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859896194-22.jpg",
+      "archivo": "foto-1794860041275-22.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859897779-21.jpg",
+      "archivo": "foto-1794860042855-21.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859899869-17.jpg",
+      "archivo": "foto-1794860045354-17.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859901643-26.jpg",
+      "archivo": "foto-1794860046421-26.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859903702-29.jpg",
+      "archivo": "foto-1794860048137-29.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859904689-16.jpg",
+      "archivo": "foto-1794860049274-16.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859906253-30.jpg",
+      "archivo": "foto-1794860050505-30.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859907853-27.jpg",
+      "archivo": "foto-1794860051627-27.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859909307-31.jpg",
+      "archivo": "foto-1794860052866-31.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859910665-23.jpg",
+      "archivo": "foto-1794860054109-23.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859911755-32.jpg",
+      "archivo": "foto-1794860055717-32.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859913314-33.jpg",
+      "archivo": "foto-1794860056869-33.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859915101-34.jpg",
+      "archivo": "foto-1794860058191-34.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859916944-35.jpg",
+      "archivo": "foto-1794860059522-35.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859918898-36.jpg",
+      "archivo": "foto-1794860060978-36.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859920094-37.jpg",
+      "archivo": "foto-1794860063326-37.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859921336-38.jpg",
+      "archivo": "foto-1794860064849-38.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859923063-39.jpg",
+      "archivo": "foto-1794860066281-39.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859924682-40.jpg",
+      "archivo": "foto-1794860067596-40.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859225753-3.jpg",
+      "archivo": "foto-1794860069246-3.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859227330-4.jpg",
+      "archivo": "foto-1794860070682-4.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859229094-5.jpg",
+      "archivo": "foto-1794860072115-5.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859230830-6.jpg",
+      "archivo": "foto-1794860073542-6.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859232358-7.jpg",
+      "archivo": "foto-1794860075384-7.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859235205-9.jpg",
+      "archivo": "foto-1794860076737-9.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859237153-10.jpg",
+      "archivo": "foto-1794860078256-10.jpg",
       "pie": ""
     }
   ],
