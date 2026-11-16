@@ -4,7 +4,48 @@ window.CONTENIDO = {
   "textoMenu": "INFO",
   "instagram": "https://www.instagram.com/simonsanchzs/",
   "email": "simonsanchzs@gmail.com",
-  "fotos": [],
+  "fotos": [
+    {
+      "archivo": "foto-1794859065006-1.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859067168-2.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859068707-3.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859070441-4.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859072018-5.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859073750-6.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859075593-7.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859076703-8.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859077969-9.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794859079738-10.jpg",
+      "pie": ""
+    }
+  ],
   "info": [
     [
       "Fotógrafo centrado en el fotoperiodismo y el reportaje documental. Estudios de formación general en IEFC, Barcelona, y de especialización periodística en la Universidad de Hannover, Alemania.",
