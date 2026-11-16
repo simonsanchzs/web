@@ -245,7 +245,7 @@ window.CONTENIDO = {
   "info": [
     [
       "Fotógrafo centrado en el fotoperiodismo y el reportaje documental. Estudios de formación general en IEFC, Barcelona, y de especialización periodística en la Universidad de Hannover, Alemania.",
-      "La narración de historias mediante la captura fotográfica es lo que me conmueve desde que profundicé en la diversidad del mundo de la imagen. He realizado diferentes exposiciones de carácter nacional e internacional.",
+      "La narración de historias mediante la captura fotográfica es lo que me conmueve desde que profundicé en la diversidad del mundo de la imagen.",
       "La cámara es mi “sillón de psicoanalista” para documentar e interpretar la realidad y, así, de la manera más genuina congelar un relato fotográfico."
     ],
     [
