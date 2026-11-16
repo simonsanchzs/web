@@ -28,7 +28,12 @@ body.portada{overflow:hidden}
 
 /* Botón del dado (centro, abajo) y collage de todas las fotos */
 .e-indice{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);width:48px;height:36px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;color:#000;cursor:pointer;z-index:11;-webkit-tap-highlight-color:transparent}
-@media only screen and (max-width:600px){.e-indice{bottom:52px}} /* Móvil: el dado sube por encima de INSTAGRAM y el email, centrado */
+/* Móvil: el dado va en la esquina inferior izquierda y INSTAGRAM queda encima del email (a la derecha) */
+@media only screen and (max-width:600px){
+.e-indice{left:4px;bottom:12px;transform:none}
+.e-insta{left:auto;right:20px;bottom:40px}
+.marco img{max-height:calc(100vh - 130px);max-height:calc(100dvh - 130px)}
+}
 /* Collage: el fondo fuera del marco de la foto sigue en blanco; solo el marco se cubre con negro al 65 %, como los pies de foto */
 .indice{position:fixed;inset:0;z-index:10;background:transparent}
 .panel{position:absolute;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;overflow:hidden}

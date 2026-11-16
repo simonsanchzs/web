@@ -87,19 +87,6 @@
     if (e.key === "ArrowLeft") ant();
   });
 
-  // Móvil: el dado se coloca a medio camino entre el borde inferior de la foto y la línea de INSTAGRAM / email
-  function colocarDado(){
-    var b = $("btnIndice");
-    if (window.innerWidth > 600) { b.style.bottom = ""; return; }
-    var r = marco.getBoundingClientRect(), H = window.innerHeight, arriba = r.bottom, abajo = H - 40;
-    var centro = Math.max((arriba + abajo) / 2, arriba + 22);
-    b.style.bottom = Math.max(4, Math.round(H - centro - 18)) + "px";
-  }
-  img.addEventListener("load", colocarDado);
-  window.addEventListener("resize", colocarDado);
-  window.addEventListener("orientationchange", function(){ setTimeout(colocarDado, 250); });
-  colocarDado();
-
   // Collage con todas las fotos (botón del dado), de 20 en 20. Tocar una foto va directamente a ella; tocar fuera vuelve a la foto actual.
   var PAG = 20, pagina = 0;
   indice = $("indice"); var rejilla = $("rejilla"), panel = $("panel");
