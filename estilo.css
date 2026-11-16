@@ -42,9 +42,12 @@ body.portada{overflow:hidden}
 .pag-num{position:absolute;top:8px;left:0;right:0;text-align:center;color:#fff;font-size:11px;line-height:16px;letter-spacing:.04em;pointer-events:none}
 
 /* Info */
-.info{padding:48px 0 60px;text-align:center}
-.info p{line-height:20px;margin:0 auto 20px;padding:0 20px;max-width:680px}
-.info hr{border:0;border-top:1px solid #000;margin:6px 0 8px}
+/* El bloque de texto queda centrado en el eje horizontal y vertical, con la tipografía algo mayor */
+.info{min-height:100vh;min-height:100dvh;padding:72px 0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:15px;line-height:24px}
+.info p{line-height:24px;margin:0 auto 22px;padding:0 24px;max-width:680px;width:100%}
+.info hr{width:100%;border:0;border-top:1px solid #000;margin:6px 0 8px}
+.info hr:last-child{margin-bottom:0}
+@media only screen and (max-width:600px){.info{font-size:14px;line-height:22px}.info p{line-height:22px;padding:0 20px}}
 .info a{color:#00f}
 [hidden]{display:none!important}
 body:not(.portada) .zona{display:none}
