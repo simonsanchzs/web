@@ -8,9 +8,6 @@ a{color:#000;text-decoration:none}
 .e-insta{bottom:20px;left:20px;line-height:20px}
 .e-mail{bottom:20px;right:20px;line-height:20px}
 
-/* Pantallas estrechas: textos inferiores algo menores para que no choquen con el dado central */
-@media only screen and (max-width:420px){.e-insta,.e-mail{font-size:10.5px;left:auto}.e-insta{left:14px}.e-mail{right:14px}}
-
 /* Portada: una foto cada vez */
 body.portada{overflow:hidden}
 .zona{position:fixed;top:0;bottom:0;width:50%;z-index:0}
@@ -31,6 +28,7 @@ body.portada{overflow:hidden}
 
 /* Botón del dado (centro, abajo) y collage de todas las fotos */
 .e-indice{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);width:48px;height:36px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;color:#000;cursor:pointer;z-index:11;-webkit-tap-highlight-color:transparent}
+@media only screen and (max-width:600px){.e-indice{bottom:52px}} /* Móvil: el dado sube por encima de INSTAGRAM y el email, centrado */
 /* Collage: el fondo fuera del marco de la foto sigue en blanco; solo el marco se cubre con negro al 65 %, como los pies de foto */
 .indice{position:fixed;inset:0;z-index:10;background:transparent}
 .panel{position:absolute;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;overflow:hidden}
