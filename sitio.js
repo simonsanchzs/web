@@ -74,7 +74,8 @@
     if (enInfo() || e.target.closest("a, #btnIndice, #indice")) return;
     if (arrastrado) { arrastrado = false; return; }
     if (e.target.closest("#marco")) {
-      if (fotos[i].pie) { marco.classList.toggle("abierto"); programar(); } else sig();
+      if (fotos[i].pie) { marco.classList.toggle("abierto"); programar(); }
+      else e.clientX < window.innerWidth / 2 ? ant() : sig();   // sin pie: mitad izquierda = anterior, mitad derecha = siguiente
       return;
     }
     e.clientX < window.innerWidth / 2 ? ant() : sig();
