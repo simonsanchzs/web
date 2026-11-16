@@ -6,43 +6,43 @@ window.CONTENIDO = {
   "email": "simonsanchzs@gmail.com",
   "fotos": [
     {
-      "archivo": "foto-1794859065006-1.jpg",
+      "archivo": "foto-1794859222283-1.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859067168-2.jpg",
+      "archivo": "foto-1794859224373-2.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859068707-3.jpg",
+      "archivo": "foto-1794859225753-3.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859070441-4.jpg",
+      "archivo": "foto-1794859227330-4.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859072018-5.jpg",
+      "archivo": "foto-1794859229094-5.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859073750-6.jpg",
+      "archivo": "foto-1794859230830-6.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859075593-7.jpg",
+      "archivo": "foto-1794859232358-7.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859076703-8.jpg",
+      "archivo": "foto-1794859233648-8.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859077969-9.jpg",
+      "archivo": "foto-1794859235205-9.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794859079738-10.jpg",
+      "archivo": "foto-1794859237153-10.jpg",
       "pie": ""
     }
   ],
