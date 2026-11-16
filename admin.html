@@ -191,7 +191,7 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
   $("btnAnadir").addEventListener("click", function(){ $("archivo").click(); });
   $("archivo").addEventListener("change", function(e){
     var nuevas = [].map.call(e.target.files, function(f){ return { id: ++seq, archivo: null, url: URL.createObjectURL(f), pie: "", ratio: "original", pos: 50, file: f }; });
-    items = nuevas.concat(items);   // las nuevas entran al principio
+    items = items.concat(nuevas);   // las nuevas entran al final
     e.target.value = ""; pintar(); if (nuevas.length) marcar();
   });
 
