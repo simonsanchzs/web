@@ -7,7 +7,7 @@ window.CONTENIDO = {
   "fotos": [
     {
       "archivo": "foto-1794837499192-6.jpg",
-      "pie": ""
+      "pie": "Huelga general"
     },
     {
       "archivo": "foto-1794837501128-7.jpg",
