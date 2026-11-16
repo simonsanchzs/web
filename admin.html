@@ -46,6 +46,16 @@ section{padding-top:16px}
 .barra{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #000;padding:12px 0 calc(12px + env(safe-area-inset-bottom))}
 .barra .wrap{display:flex;align-items:center;gap:12px}
 .barra p{flex:1;font-size:12px;line-height:16px}
+.vistas{display:flex;gap:8px;margin-bottom:12px}
+.vistas .btn{flex:1;padding:8px 10px}
+.vistas .btn.on{background:#000;color:#fff}
+#lista.cuadricula{display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:6px}
+.celda{position:relative;aspect-ratio:1/1;background:#eee;cursor:grab;overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.celda img{display:block;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.celda b{position:absolute;left:0;top:0;background:#000;color:#fff;font-size:10px;line-height:14px;font-weight:400;padding:0 5px}
+.celda.sortable-ghost{opacity:.3}
+.celda.sortable-chosen{outline:2px solid #000}
+.foto.resalta{outline:3px solid #000}
 .vacio{text-align:center;color:#888;padding:32px 0}
 ol.pasos{margin:8px 0 0 18px;font-size:13px}
 </style>
@@ -60,6 +70,8 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
 <section id="v-fotos">
   <button class="btn negro anadir" id="btnAnadir">+ Añadir fotos</button>
   <input type="file" id="archivo" accept="image/*" multiple hidden>
+  <div class="vistas"><button class="btn" data-v="cuadricula">Cuadrícula</button><button class="btn" data-v="lista">Lista</button></div>
+  <p class="aviso" id="avisoVista" style="margin:0 0 12px">Mantén pulsada una foto y arrástrala para cambiar su orden. Toca una foto para editar su pie, proporción o eliminarla.</p>
   <div id="lista"></div>
   <p class="vacio" id="vacio" hidden>Todavía no hay fotos.</p>
 </section>
@@ -98,9 +110,12 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
   var LADO_MAX = 2400, CALIDAD = 0.88;
 
   var datos = null, items = [], borrar = [], subidas = [], sucio = false, ocupado = false, seq = 0;
+  var vista = leerVista(), arrastrando = false, ordenable = null;
   var cfg = leerCfg();
 
   function leerCfg(){ try { return JSON.parse(localStorage.getItem("portafolio-cfg")) || {}; } catch(e){ return {}; } }
+  function leerVista(){ try { return localStorage.getItem("portafolio-vista") === "lista" ? "lista" : "cuadricula"; } catch(e){ return "cuadricula"; } }
+  function guardarVista(){ try { localStorage.setItem("portafolio-vista", vista); } catch(e){} }
   var PREDET = { user: "simonsanchzs", repo: "web" };
   function guardarCfg(){ try { localStorage.setItem("portafolio-cfg", JSON.stringify(cfg)); } catch(e){} }
   function conectado(){ return !!(cfg.user && cfg.repo && cfg.token); }
@@ -155,7 +170,27 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
   function css(r){ return r === "original" ? "auto" : r.replace(":", " / "); }
   function pintar(){
     var L = $("lista"); L.innerHTML = "";
+    L.className = vista === "cuadricula" ? "cuadricula" : "";
     $("vacio").hidden = items.length > 0;
+    $("avisoVista").hidden = vista !== "cuadricula";
+    [].forEach.call(document.querySelectorAll(".vistas .btn"), function(b){ b.classList.toggle("on", b.dataset.v === vista); });
+    if (vista === "cuadricula") {
+      items.forEach(function(it, n){
+        var c = document.createElement("div"); c.className = "celda"; c.dataset.id = it.id;
+        c.innerHTML = '<img alt="" draggable="false"><b></b>';
+        c.querySelector("img").src = it.url;
+        c.querySelector("b").textContent = (n + 1) + (it.file ? " · nueva" : "");
+        c.addEventListener("click", function(){
+          if (arrastrando) return;
+          vista = "lista"; guardarVista(); pintar();
+          var f = $("lista").querySelector('[data-id="' + it.id + '"]');
+          if (f) { f.scrollIntoView({ block: "center" }); f.classList.add("resalta"); setTimeout(function(){ f.classList.remove("resalta"); }, 1500); }
+        });
+        L.appendChild(c);
+      });
+      ajustarOrden();
+      return;
+    }
     items.forEach(function(it, n){
       var d = document.createElement("div"); d.className = "foto"; d.dataset.id = it.id;
       d.innerHTML =
@@ -181,8 +216,23 @@ ol.pasos{margin:8px 0 0 18px;font-size:13px}
       });
       L.appendChild(d);
     });
+    ajustarOrden();
   }
-  if (window.Sortable) new Sortable($("lista"), { handle: ".asa", animation: 150, onEnd: function(){
+  function ajustarOrden(){
+    if (!ordenable) return;
+    var g = vista === "cuadricula";
+    ordenable.option("handle", g ? ".celda" : ".asa");
+    ordenable.option("delay", g ? 180 : 0);
+    ordenable.option("delayOnTouchOnly", g);
+    ordenable.option("touchStartThreshold", g ? 8 : 0);
+  }
+  [].forEach.call(document.querySelectorAll(".vistas .btn"), function(b){
+    b.addEventListener("click", function(){ vista = b.dataset.v; guardarVista(); pintar(); });
+  });
+  if (window.Sortable) ordenable = new Sortable($("lista"), { handle: ".asa", animation: 150,
+    onStart: function(){ arrastrando = true; },
+    onEnd: function(){
+    setTimeout(function(){ arrastrando = false; }, 50);
     var orden = [].map.call($("lista").children, function(c){ return +c.dataset.id; });
     items.sort(function(a, b){ return orden.indexOf(a.id) - orden.indexOf(b.id); });
     pintar(); marcar();
