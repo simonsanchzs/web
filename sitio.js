@@ -12,7 +12,7 @@
 
   // Página de info
   var info = $("info");
-  info.innerHTML = (C.info || []).map(function(bloque){
+  info.innerHTML = '<h1>' + esc(C.nombre || "") + '</h1>' + (C.info || []).map(function(bloque){
     return bloque.map(function(l){
       return "<p>" + esc(l).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function(_,t,u){
         return '<a href="'+u+'"'+(/^http/.test(u)?' target="_blank" rel="noopener"':'')+'>'+t+'</a>'; }) + "</p>";

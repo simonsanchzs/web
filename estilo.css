@@ -44,10 +44,11 @@ body.portada{overflow:hidden}
 /* Info */
 /* El bloque de texto queda centrado en el eje horizontal y vertical, con la tipografía algo mayor */
 .info{min-height:100vh;min-height:100dvh;padding:72px 0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:15px;line-height:24px}
+.info h1{font-size:30px;line-height:36px;font-weight:400;text-transform:uppercase;letter-spacing:.02em;margin:0 0 40px;padding:0 24px;width:100%}
 .info p{line-height:24px;margin:0 auto 22px;padding:0 24px;max-width:680px;width:100%}
 .info hr{width:100%;border:0;border-top:1px solid #000;margin:6px 0 8px}
 .info hr:last-child{margin-bottom:0}
-@media only screen and (max-width:600px){.info{font-size:14px;line-height:22px}.info p{line-height:22px;padding:0 20px}}
+@media only screen and (max-width:600px){.info{font-size:14px;line-height:22px}.info h1{font-size:21px;line-height:28px;margin-bottom:32px;padding:0 20px}.info p{line-height:22px;padding:0 20px}}
 .info a{color:#00f}
 [hidden]{display:none!important}
 body:not(.portada) .zona{display:none}
