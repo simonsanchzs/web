@@ -59,6 +59,10 @@
     programar();
   }
   function sig(){ ver(i+1); } function ant(){ ver(i-1); }
+  // Si una foto no se puede cargar (por ejemplo, ya eliminada), salta a la siguiente
+  var saltos = 0;
+  img.addEventListener("load", function(){ saltos = 0; });
+  img.addEventListener("error", function(){ if (++saltos < fotos.length) sig(); });
 
   // Deslizar con el dedo o el ratón
   var x0 = null, arrastrado = false;
@@ -119,7 +123,10 @@
       var b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", "Foto " + (n + 1));
       if (n === i) b.className = "actual";
       var im = document.createElement("img"); im.alt = ""; im.decoding = "async";
-      im.onerror = function(){ im.onerror = null; im.src = ruta(f); };   // si una foto aún no tiene miniatura, usa la grande
+      im.onerror = function(){   // si no hay miniatura usa la grande; si tampoco existe la foto, no se muestra el hueco
+        im.onerror = function(){ b.remove(); };
+        im.src = ruta(f);
+      };
       im.src = miniatura(f);
       b.appendChild(im);
       b.addEventListener("click", function(){ if (deslizado) { deslizado = false; return; } cerrarIndice(true); ver(n); });
