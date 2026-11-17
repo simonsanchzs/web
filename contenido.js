@@ -302,6 +302,10 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
+      "archivo": "foto-1794920903414-153.jpg",
+      "pie": ""
+    },
+    {
       "archivo": "foto-1794920889991-142.jpg",
       "pie": ""
     },
@@ -326,11 +330,27 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794920903414-153.jpg",
+      "archivo": "foto-1794920905801-147.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794920905801-147.jpg",
+      "archivo": "foto-1794929096170-83.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794929099189-85.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794929101543-86.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794929104118-87.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794929106629-88.jpg",
       "pie": ""
     }
   ],
