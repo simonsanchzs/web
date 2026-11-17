@@ -26,6 +26,10 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
+      "archivo": "foto-1794921537638-81.jpg",
+      "pie": ""
+    },
+    {
       "archivo": "foto-1794860026886-14.jpg",
       "pie": ""
     },
@@ -42,11 +46,27 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794860027967-18.jpg",
+      "archivo": "foto-1794860050505-30.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794920872882-145.jpg",
+      "archivo": "foto-1794860072115-5.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794860076737-9.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794862353119-51.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794921540871-80.jpg",
+      "pie": ""
+    },
+    {
+      "archivo": "foto-1794860027967-18.jpg",
       "pie": ""
     },
     {
@@ -62,15 +82,11 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
+      "archivo": "foto-1794920872882-145.jpg",
+      "pie": ""
+    },
+    {
       "archivo": "foto-1794860032266-12.jpg",
-      "pie": ""
-    },
-    {
-      "archivo": "foto-1794866620510-68.jpg",
-      "pie": ""
-    },
-    {
-      "archivo": "foto-1794860050505-30.jpg",
       "pie": ""
     },
     {
@@ -78,15 +94,7 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794860072115-5.jpg",
-      "pie": ""
-    },
-    {
-      "archivo": "foto-1794862353119-51.jpg",
-      "pie": ""
-    },
-    {
-      "archivo": "foto-1794860076737-9.jpg",
+      "archivo": "foto-1794866620510-68.jpg",
       "pie": ""
     },
     {
