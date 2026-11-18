@@ -62,6 +62,10 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
+      "archivo": "foto-1795016646936-88.jpg",
+      "pie": ""
+    },
+    {
       "archivo": "foto-1794860076737-9.jpg",
       "pie": ""
     },
