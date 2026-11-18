@@ -360,6 +360,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794929106629-88.jpg",
       "pie": ""
+    },
+    {
+      "archivo": "foto-1795019886479-90.jpg",
+      "pie": ""
     }
   ],
   "info": [
