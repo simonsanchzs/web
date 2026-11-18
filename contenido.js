@@ -50,7 +50,7 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1794927403236-82.jpg",
+      "archivo": "foto-1795016711312-89.jpg",
       "pie": ""
     },
     {
@@ -62,11 +62,11 @@ window.CONTENIDO = {
       "pie": ""
     },
     {
-      "archivo": "foto-1795016646936-88.jpg",
+      "archivo": "foto-1794860076737-9.jpg",
       "pie": ""
     },
     {
-      "archivo": "foto-1794860076737-9.jpg",
+      "archivo": "foto-1794927403236-82.jpg",
       "pie": ""
     },
     {
