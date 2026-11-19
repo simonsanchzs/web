@@ -165,11 +165,12 @@
   });
   $("btnIndice").hidden = enInfo();
 
-  // Tocar el nombre (arriba a la izquierda) vuelve al inicio: sale de la info/collage y muestra la primera foto, como al entrar de nuevo
+  // Tocar el nombre (arriba a la izquierda): desde la info vuelve a la foto donde estabas; en cualquier otro caso vuelve a la primera foto
   $("nombre").addEventListener("click", function(e){
     e.preventDefault();
+    if (enInfo()) { location.hash = "#inicio"; return; }
     if (indiceAbierto()) cerrarIndice(true);
-    if (enInfo()) location.hash = "#inicio"; else vista();
+    vista();
     ver(0);
   });
 
