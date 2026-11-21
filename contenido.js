@@ -23,7 +23,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860070682-4.jpg",
-      "pie": "Marsella, Francia, 24 de octubre de 2026. Protesta de Black Bloc contra el encarecimiento de la vivienda, la reforma educativa y el deterioro de los servicios públicos."
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Manifestantes protestan contra el encarecimiento de la vivienda, la reforma educativa y el deterioro de los servicios públicos."
     },
     {
       "archivo": "foto-1794921537638-81.jpg",
