@@ -155,7 +155,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860060978-36.jpg",
-      "pie": ""
+      "pie": "Vía Laietana, Barcelona, 11 de noviembre de 2026. La Jefatura Superior de Policía de Cataluña, sede de la Policía Nacional, cubierta con lonas ante posibles lanzamientos y pintadas, durante la huelga general."
     },
     {
       "archivo": "foto-1794860033800-25.jpg",
