@@ -315,7 +315,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795020585421-91.jpg",
-      "pie": ""
+      "pie": "Antiguo IMAX del Port Vell, Barcelona, 28 de septiembre de 2026. Andrés Iniesta, durante la presentación de la exposición inmersiva 'Iniesta: el juego interior', dedicada a su trayectoria."
     },
     {
       "archivo": "foto-1794920884487-149.jpg",
