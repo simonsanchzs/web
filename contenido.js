@@ -375,7 +375,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929101543-86.jpg",
-      "pie": ""
+      "pie": "Barcelona Culinary Hub, L'Hospitalet de Llobregat, 24 de marzo de 2026. Martín Berasategui recibe con un apretón de manos a las autoridades que acuden a la presentación de la alianza con la escuela."
     },
     {
       "archivo": "foto-1794929104118-87.jpg",
