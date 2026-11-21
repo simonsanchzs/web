@@ -311,7 +311,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867202302-65.jpg",
-      "pie": ""
+      "pie": "Tarragona, 12 de agosto de 2026. Cientos de personas se reúnen en una explanada a la espera del eclipse solar total, en el atardecer previo a la totalidad."
     },
     {
       "archivo": "foto-1795020585421-91.jpg",
