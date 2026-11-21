@@ -359,7 +359,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920900213-146.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. Frente a la comisaría de Via Laietana, una persona encapuchada sostiene en alto un cohete de pirotecnia, ante decenas de personas, al caer la noche de la huelga general."
     },
     {
       "archivo": "foto-1794920905801-147.jpg",
