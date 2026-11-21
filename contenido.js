@@ -335,7 +335,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920903414-153.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Un manifestante corre entre el humo, con una hoguera ardiendo al fondo, durante los disturbios de la protesta."
     },
     {
       "archivo": "foto-1794920889991-142.jpg",
