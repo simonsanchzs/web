@@ -51,7 +51,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795016711312-89.jpg",
-      "pie": ""
+      "pie": "Barcelona, 3 de junio de 2026. Pedro Sánchez interviene en la clausura de la 41.ª Reunión Anual del Círculo de Economía."
     },
     {
       "archivo": "foto-1794860072115-5.jpg",
