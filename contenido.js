@@ -347,7 +347,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920895361-143.jpg",
-      "pie": ""
+      "pie": "Mezquita del Carmel, Barcelona, 19 de marzo de 2026. Fieles musulmanes rezan antes del iftar, la ruptura del ayuno diario del ramadán."
     },
     {
       "archivo": "foto-1794920898001-144.jpg",
