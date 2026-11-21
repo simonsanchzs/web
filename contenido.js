@@ -267,7 +267,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867193669-56.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Habitación de un pequeño centro sanitario de la región, donde se atiende e ingresa a los pacientes."
     },
     {
       "archivo": "foto-1794867195336-57.jpg",
