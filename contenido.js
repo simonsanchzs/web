@@ -119,7 +119,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860045354-17.jpg",
-      "pie": ""
+      "pie": "Rambla Prim, Barcelona, 7 de marzo de 2026. Un hombre reza en una mezquita del barrio."
     },
     {
       "archivo": "foto-1794860046421-26.jpg",
