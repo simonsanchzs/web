@@ -263,7 +263,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867191822-55.jpg",
-      "pie": ""
+      "pie": "Aeropuerto de El Prat, Barcelona, 2026. Despedida de los misioneros mormones que concluyen su año de misión en Barcelona, con la pareja que acoge a los nuevos."
     },
     {
       "archivo": "foto-1794867193669-56.jpg",
