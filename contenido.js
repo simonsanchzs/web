@@ -135,7 +135,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795020583383-94.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. A la luz de su frontal, una dentista de la ONG Acción Senegal trata odontológicamente a un hombre mayor que, además, tiene problemas de visión."
     },
     {
       "archivo": "foto-1794860054109-23.jpg",
