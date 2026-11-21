@@ -31,7 +31,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860026886-14.jpg",
-      "pie": "Barcelona, 2 de junio de 2026. En la Reunión Anual del Círculo de Economía, su presidenta, Teresa Garcia-Milà, pregunta cuánto falta para la llegada de Alberto Núñez Feijóo, que aparece justo detrás."
+      "pie": "Barcelona, 2 de junio de 2026. En la Reunión Anual del Círculo de Economía, su presidenta, Teresa Garcia-Milà, pregunta cuánto falta para la llegada de Alberto Núñez Feijóo, que aparece justo detrás junto a Alejandro Fernández, también del PP."
     },
     {
       "archivo": "foto-1794860029398-15.jpg",
