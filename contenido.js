@@ -43,7 +43,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860048137-29.jpg",
-      "pie": ""
+      "pie": "Museo de Historia de Barcelona, El Born, 27 de febrero de 2026. Susan Sarandon, Goya Internacional 2026, a punto de entrar a su charla con el público."
     },
     {
       "archivo": "foto-1794860050505-30.jpg",
