@@ -295,7 +295,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867197475-62.jpg",
-      "pie": ""
+      "pie": "Spotify Camp Nou, Barcelona, 22 de noviembre de 2025. En su vuelta al Camp Nou tras jugar en Montjuïc, el Barça recibe al Athletic Club ante un estadio lleno."
     },
     {
       "archivo": "foto-1794867199923-63.jpg",
