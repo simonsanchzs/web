@@ -95,7 +95,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860042855-21.jpg",
-      "pie": ""
+      "pie": "Spotify Camp Nou, Barcelona, 18 de marzo de 2026. Lamine Yamal lanza el penalti ante Aaron Ramsdale, portero del Newcastle, en la vuelta de los octavos de final de la Champions que el Barça ganó por 7-2."
     },
     {
       "archivo": "foto-1794860032266-12.jpg",
