@@ -219,7 +219,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794865067958-45.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. Desde el interior de la tienda Zara de la plaza de Cataluña, un hombre habla por teléfono mientras los piquetes de la huelga general le obligan a salir."
     },
     {
       "archivo": "foto-1794867171406-45.jpg",
