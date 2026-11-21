@@ -235,7 +235,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867178420-49.jpg",
-      "pie": ""
+      "pie": "Barcelona, 5 de octubre de 2025. Una joven se coloca con los brazos en cruz ante el escaparate roto de un Carrefour, en un intento de impedir que se siga destrozando el local, durante la manifestación por Palestina."
     },
     {
       "archivo": "foto-1794867180959-50.jpg",
