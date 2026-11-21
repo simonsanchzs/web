@@ -283,7 +283,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862383501-59.jpg",
-      "pie": ""
+      "pie": "Barcelona, 28 de noviembre de 2025. El sargento jefe Miquel Beltrán, de la Unidad Central de Helicópteros de los Mossos d'Esquadra, a los mandos de uno de los helicópteros del cuerpo."
     },
     {
       "archivo": "foto-1794862385401-60.jpg",
