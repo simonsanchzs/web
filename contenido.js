@@ -207,7 +207,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862358196-50.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Alcalde de uno de los poblados visitados, aguarda su turno en la consulta de la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794862359755-55.jpg",
