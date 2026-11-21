@@ -271,7 +271,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867195336-57.jpg",
-      "pie": ""
+      "pie": "Badalona, 17 de diciembre de 2025. Justo tras el desalojo del B9, sus residentes aguardan a pie de calle, con sus cosas, a ver qué opciones les quedan. Acabaron instalándose bajo el puente de la autopista C-31."
     },
     {
       "archivo": "foto-1794920879015-152.jpg",
