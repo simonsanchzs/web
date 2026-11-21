@@ -287,7 +287,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862385401-60.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Los habitantes de la región cruzan con frecuencia el río Gambia en piraguas de madera, incluso con sus motos, para desplazarse de un lugar a otro."
     },
     {
       "archivo": "foto-1794866159724-64.jpg",
