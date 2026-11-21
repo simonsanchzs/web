@@ -247,7 +247,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867184953-52.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Un manifestante se sube al balcón de un edificio frente a la línea policial y pinta con espray símbolos anarquistas, como protesta por la difícil situación en Francia."
     },
     {
       "archivo": "foto-1794867189487-54.jpg",
