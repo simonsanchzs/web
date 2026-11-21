@@ -231,7 +231,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867176057-47.jpg",
-      "pie": ""
+      "pie": "Badalona, 17 de diciembre de 2025. Antes del amanecer, una persona que va a ser desalojada del B9 recoge sus cosas junto a su bici."
     },
     {
       "archivo": "foto-1794867178420-49.jpg",
