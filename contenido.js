@@ -303,7 +303,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794866166798-62.jpg",
-      "pie": ""
+      "pie": "L'Hospitalet de Llobregat, 8 de abril de 2025. Durante un dispositivo del Pla Kanpai contra la multirreincidencia, un agente de los Mossos d'Esquadra cachea e identifica a una persona junto a un coche del cuerpo."
     },
     {
       "archivo": "foto-1794920882014-150.jpg",
