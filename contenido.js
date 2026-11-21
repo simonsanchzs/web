@@ -127,7 +127,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860051627-27.jpg",
-      "pie": ""
+      "pie": "Les Réformés, Marsella, Francia, 24 de octubre de 2026. Un manifestante con el rostro cubierto muestra una bandera francesa con el símbolo anarquista, en el punto de partida de la protesta contra el encarecimiento de la vivienda, la reforma educativa y el deterioro de los servicios públicos."
     },
     {
       "archivo": "foto-1794860056869-33.jpg",
