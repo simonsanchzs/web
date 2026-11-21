@@ -99,7 +99,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860032266-12.jpg",
-      "pie": ""
+      "pie": "Huelga general en Barcelona, 11 de noviembre de 2026. Dos personas son inmovilizadas en el suelo por agentes de la Guardia Urbana durante los piquetes de la mañana."
     },
     {
       "archivo": "foto-1794862351114-57.jpg",
