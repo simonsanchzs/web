@@ -151,7 +151,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860055717-32.jpg",
-      "pie": ""
+      "pie": "Pont del Treball Digne, Sant Andreu, Barcelona, 25 de marzo de 2026. Un agente de la Guardia Urbana vigila la zona durante el desalojo de dos asentamientos de personas sin hogar junto a las vías del tren."
     },
     {
       "archivo": "foto-1794860060978-36.jpg",
