@@ -367,7 +367,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929096170-83.jpg",
-      "pie": ""
+      "pie": "Metropolitano, Madrid, 14 de abril de 2026. Fermín López encara una jugada entre Antoine Griezmann y Giuliano Simeone en el Atlético–Barça de cuartos de final de la Champions League."
     },
     {
       "archivo": "foto-1794929099189-85.jpg",
