@@ -143,7 +143,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860063326-37.jpg",
-      "pie": ""
+      "pie": "Audiencia de Barcelona, 20 de noviembre de 2023. Shakira abandona el tribunal tras ratificar el acuerdo con la Fiscalía y admitir el fraude fiscal de 14,5 millones de euros, en el primer día de su juicio."
     },
     {
       "archivo": "foto-1794860059522-35.jpg",
