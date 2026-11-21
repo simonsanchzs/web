@@ -383,7 +383,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929106629-88.jpg",
-      "pie": ""
+      "pie": "Paseo de Gracia, Barcelona, 6 de octubre de 2026. Manifestantes cargan con una valla metálica junto a contenedores en llamas, en los disturbios nocturnos posteriores a la protesta por la vivienda."
     },
     {
       "archivo": "foto-1795022320137-90.jpg",
