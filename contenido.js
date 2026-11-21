@@ -199,7 +199,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860073542-6.jpg",
-      "pie": ""
+      "pie": "Barcelona, 9 de junio de 2026. Emocionados, dos hermanos se abrazan en plena vigilia del papa León XIV en el Estadi Olímpic."
     },
     {
       "archivo": "foto-1795038744616-48.jpg",
