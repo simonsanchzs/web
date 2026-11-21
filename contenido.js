@@ -359,7 +359,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920900213-146.jpg",
-      "pie": "Barcelona, 11 de noviembre de 2026. Frente a la comisaría de Via Laietana, una persona encapuchada sostiene en alto un cohete de pirotecnia, ante decenas de personas, al caer la noche de la huelga general."
+      "pie": "Barcelona, 11 de noviembre de 2026. Frente a la Jefatura de Policía de Via Laietana, una persona encapuchada sostiene en alto un cohete de pirotecnia, ante decenas de personas, al caer la noche de la huelga general."
     },
     {
       "archivo": "foto-1794920905801-147.jpg",
@@ -367,7 +367,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929096170-83.jpg",
-      "pie": "Metropolitano, Madrid, 14 de abril de 2026. Fermín López encara una jugada entre Antoine Griezmann y Giuliano Simeone en el Atlético–Barça de cuartos de final de la Champions League."
+      "pie": "Spotify Camp Nou, Barcelona, 8 de abril de 2026. Fermín López encara una jugada entre Antoine Griezmann y Giuliano Simeone en el Barça–Atlético de cuartos de final de la Champions League."
     },
     {
       "archivo": "foto-1794929099189-85.jpg",
