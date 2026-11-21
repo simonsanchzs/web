@@ -259,7 +259,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867187228-53.jpg",
-      "pie": ""
+      "pie": "Cerdanyola del Vallès, 19 de octubre de 2026. Un huevo golpea el chaleco de un antidisturbio de los Mossos d'Esquadra en la concentración contra el intento de Vito Quiles de acceder a la Universitat Autònoma de Barcelona, donde no pudo entrar."
     },
     {
       "archivo": "foto-1794867191822-55.jpg",
