@@ -123,7 +123,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860046421-26.jpg",
-      "pie": ""
+      "pie": "Entre la plaza de Cataluña y la plaza Urquinaona, Barcelona, 6 de octubre de 2026. Un bombero apaga el fuego de los disturbios nocturnos tras la protesta por la vivienda."
     },
     {
       "archivo": "foto-1794860051627-27.jpg",
