@@ -159,7 +159,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860033800-25.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Un manifestante, disfrazado de oficial francés de época, ondea la bandera francesa desde lo alto de un monumento durante la protesta."
     },
     {
       "archivo": "foto-1794860049274-16.jpg",
