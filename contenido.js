@@ -147,7 +147,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860059522-35.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. Desde los balcones del Eixample, vecinos arrojan agua a la calle que tienen debajo, la suya, en llamas por los disturbios de la huelga general."
     },
     {
       "archivo": "foto-1794860055717-32.jpg",
