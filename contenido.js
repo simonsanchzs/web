@@ -183,7 +183,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860039538-19.jpg",
-      "pie": ""
+      "pie": "Badalona, 17 de diciembre de 2025. Un residente del B9 abandona el edificio durante el desalojo, con gesto abatido y confuso, sin saber adónde ir ni qué opciones le quedan."
     },
     {
       "archivo": "foto-1794862356675-54.jpg",
