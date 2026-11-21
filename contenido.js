@@ -339,7 +339,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920889991-142.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Dos manifestantes marselleses, ya con gafas y mascarillas puestas y preparados para los enfrentamientos, avanzan por una calle cubierta de humo."
     },
     {
       "archivo": "foto-1794920892884-151.jpg",
