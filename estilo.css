@@ -24,6 +24,8 @@ body.portada{overflow:hidden}
 .velo p{max-width:46em;white-space:pre-line}
 /* Ordenador y iPad: pie de foto algo mayor (el móvil se queda como está) */
 @media only screen and (min-width:601px) and (min-height:501px){.velo{line-height:26px}.velo p{font-size:16px;max-width:40em}}
+/* Solo ordenador (ratón y pantalla ancha): algo mayor aún; iPad y móvil no cambian */
+@media only screen and (min-width:961px) and (hover:hover) and (pointer:fine){.velo{line-height:30px}.velo p{font-size:19px;max-width:38em}}
 .marco.abierto .velo{opacity:1;visibility:visible}
 /* Selector ES/EN: centrado, al final del pie de foto, justo encima del dado */
 .lang{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:14px;line-height:16px;font-size:12px;letter-spacing:.06em}
