@@ -63,7 +63,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795020580943-92.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una estudiante, en plena clase de filosofía, en un aula que también funciona como biblioteca, creada por la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794860076737-9.jpg",
