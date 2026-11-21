@@ -19,7 +19,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860025431-8.jpg",
-      "pie": ""
+      "pie": "Aeropuerto de Barcelona-El Prat, 9 de junio de 2026. El papa León XIV desciende del avión a su llegada a la ciudad, en el momento en que una ráfaga de viento le levanta la capa."
     },
     {
       "archivo": "foto-1794860070682-4.jpg",
