@@ -171,7 +171,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860066281-39.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. Durante los disturbios de la huelga general, un médico voluntario atiende en plena calle a un manifestante al que le ha caído una piedra en la cabeza."
     },
     {
       "archivo": "foto-1794862355013-53.jpg",
