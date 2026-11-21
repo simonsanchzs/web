@@ -239,7 +239,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867180959-50.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Bomberos atienden a un hombre herido tras una caída y lo trasladan en una camilla durante la protesta."
     },
     {
       "archivo": "foto-1794867183107-51.jpg",
