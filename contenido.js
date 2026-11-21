@@ -139,7 +139,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860054109-23.jpg",
-      "pie": ""
+      "pie": "Barcelona, 5 de octubre de 2025. Dos manifestantes por Palestina exhiben la bandera, decididos a no retroceder, ante los antidisturbios de los Mossos d'Esquadra, en la rotonda del puerto donde confluyen la avenida del Paralelo y la Ronda Litoral."
     },
     {
       "archivo": "foto-1794860063326-37.jpg",
