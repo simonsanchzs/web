@@ -38,6 +38,21 @@
   function ruta(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/" + encodeURIComponent(f.archivo); }
   function cerrar(){ marco.classList.remove("abierto"); }
 
+  // Selector ES/EN del pie de foto: cada foto nueva empieza siempre en español
+  var EN = window.PIES_EN || {}, selector = $("lang");
+  function idioma(l, f){
+    f = f || fotos[i];
+    var en = l === "en" && EN[f.archivo];
+    pie.textContent = (en ? EN[f.archivo] : f.pie) || "";
+    pie.lang = en ? "en" : "es";
+    selector.hidden = !EN[f.archivo];
+    [].forEach.call(selector.querySelectorAll("button"), function(b){ b.classList.toggle("on", b.getAttribute("data-l") === (en ? "en" : "es")); });
+  }
+  selector.addEventListener("click", function(e){
+    var b = e.target.closest("button"); if (!b) return;
+    idioma(b.getAttribute("data-l")); programar();
+  });
+
   // Pase automático: avanza sola cada X segundos (se ajusta en el panel; 0 lo desactiva). Cualquier toque reinicia la cuenta.
   // Se detiene mientras el pie de foto está abierto o se está viendo la página de info.
   var SEGUNDOS = (typeof C.segundos === "number" && C.segundos >= 0) ? C.segundos : 5, reloj = null;
@@ -52,7 +67,7 @@
     i = (n + fotos.length) % fotos.length;
     var f = fotos[i];
     cerrar();
-    pie.textContent = f.pie || "";
+    idioma("es", f);
     img.alt = f.pie || "";
     img.src = ruta(f);
     [1,2].forEach(function(k){ new Image().src = ruta(fotos[(i+k) % fotos.length]); });
@@ -75,7 +90,7 @@
 
   // Clic sobre la foto: muestra/oculta el pie. Clic fuera: anterior (izquierda) o siguiente (derecha).
   document.addEventListener("click", function(e){
-    if (enInfo() || e.target.closest("a, #btnIndice, #indice")) return;
+    if (enInfo() || e.target.closest("a, #btnIndice, #indice, #lang")) return;
     if (arrastrado) { arrastrado = false; return; }
     if (e.target.closest("#marco")) {
       if (fotos[i].pie) { marco.classList.toggle("abierto"); programar(); }

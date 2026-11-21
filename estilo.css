@@ -23,6 +23,10 @@ body.portada{overflow:hidden}
 .velo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;line-height:20px;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
 .velo p{max-width:46em;white-space:pre-line}
 .marco.abierto .velo{opacity:1;visibility:visible}
+/* Selector ES/EN: centrado, al final del pie de foto, justo encima del dado */
+.lang{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:14px;line-height:16px;font-size:12px;letter-spacing:.06em}
+.lang button{background:none;border:0;padding:4px 2px;color:#fff;opacity:.55;font:inherit;letter-spacing:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.lang button.on{opacity:1;text-decoration:underline;text-underline-offset:3px}
 /* Fondo negro liso al 65 %, cubre toda la foto */
 .velo{background:rgba(0,0,0,.65);padding:10%}
 
