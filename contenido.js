@@ -227,7 +227,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867173994-46.jpg",
-      "pie": ""
+      "pie": "Barcelona, 2025. El actor Eduard Fernández."
     },
     {
       "archivo": "foto-1794867176057-47.jpg",
