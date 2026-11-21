@@ -107,7 +107,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920872882-145.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Al fondo, dos dentistas de la ONG Acción Senegal tratan a un paciente. En primer plano, una mujer aguarda su turno con la mirada tensa y llena de incertidumbre."
     },
     {
       "archivo": "foto-1795118022229-96.jpg",
