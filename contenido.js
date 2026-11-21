@@ -131,7 +131,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860056869-33.jpg",
-      "pie": ""
+      "pie": "Paseo de Gracia, Barcelona, 6 de octubre de 2026. Manifestantes lanzan material de un restaurante contra los Mossos d'Esquadra durante los disturbios que siguieron a la protesta por la vivienda."
     },
     {
       "archivo": "foto-1795020583383-94.jpg",
