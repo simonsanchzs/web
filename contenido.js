@@ -35,7 +35,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860029398-15.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de mayo de 2025. Joan Laporta y Hansi Flick se abrazan tras la victoria del Barça sobre el Real Madrid en el Clásico (4-3), que dejó la Liga casi sentenciada."
     },
     {
       "archivo": "foto-1794860038130-28.jpg",
