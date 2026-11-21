@@ -343,7 +343,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920892884-151.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una dentista y una enfermera de la ONG Acción Senegal atienden a un paciente en plena intervención."
     },
     {
       "archivo": "foto-1794920895361-143.jpg",
