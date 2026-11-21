@@ -91,7 +91,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862353119-51.jpg",
-      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Dos pacientes permanecen ingresadas con suero en un centro sanitario donde trabaja la ONG Acción Senegal."
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Dos mujeres, ingresadas y con suero en una sala compartida de un centro sanitario donde trabaja la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794860042855-21.jpg",
