@@ -79,7 +79,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795018051861-89.jpg",
-      "pie": ""
+      "pie": "Parlament de Catalunya, Barcelona, 2024. Salvador Illa, líder del PSC y entonces candidato a la presidencia de la Generalitat, durante una rueda de prensa."
     },
     {
       "archivo": "foto-1794860041275-22.jpg",
