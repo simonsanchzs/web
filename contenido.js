@@ -323,7 +323,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867204518-66.jpg",
-      "pie": ""
+      "pie": "Badalona, 5 de diciembre de 2023. Paquita, de 97 años y vecina del barrio del Congrés, vivía sola en un cuarto piso sin ascensor y apenas podía subir ni bajar las escaleras. Años después acabó en una residencia."
     },
     {
       "archivo": "foto-1794920887006-141.jpg",
