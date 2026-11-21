@@ -371,7 +371,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929099189-85.jpg",
-      "pie": ""
+      "pie": "Barcelona, 12 de julio de 2026. El conseller de la Presidencia, Albert Dalmau, en su despacho del Parlament."
     },
     {
       "archivo": "foto-1794929101543-86.jpg",
