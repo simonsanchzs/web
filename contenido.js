@@ -291,7 +291,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794866159724-64.jpg",
-      "pie": ""
+      "pie": "Institut de Seguretat Pública de Catalunya, Mollet del Vallès, 10 de junio de 2025. Agentes de los Mossos d'Esquadra, policías locales y la Guardia Urbana durante una jornada de formación."
     },
     {
       "archivo": "foto-1794867197475-62.jpg",
