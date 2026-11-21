@@ -103,7 +103,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862351114-57.jpg",
-      "pie": "Passeig de Gràcia, Barcelona, 11 de noviembre de 2026. Durante los disturbios de la noche de la huelga general, una persona entra en la tienda de Apple a través de la puerta, que quedó rota tras el lanzamiento de vallas, con llamas en la entrada."
+      "pie": "Passeig de Gràcia, Barcelona, 11 de noviembre de 2026. Durante los disturbios de la noche de la huelga general, una persona entra en la tienda de Apple a través de la puerta rota, con llamas en la entrada."
     },
     {
       "archivo": "foto-1794920872882-145.jpg",
