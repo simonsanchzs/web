@@ -7,7 +7,7 @@ window.CONTENIDO = {
   "fotos": [
     {
       "archivo": "foto-1794860020343-1.jpg",
-      "pie": "Huelga general en Barcelona, 11 de noviembre. Una mujer, tras el final de la manifestación, entre los escombros y el humo que dejó la jornada."
+      "pie": "Huelga general en Barcelona, 11 de noviembre de 2026. Una mujer, tras el final de la manifestación, entre los escombros y el humo que dejó la jornada."
     },
     {
       "archivo": "foto-1794860022141-2.jpg",
