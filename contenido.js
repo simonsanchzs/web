@@ -59,7 +59,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794928331196-83.jpg",
-      "pie": ""
+      "pie": "Mataró, Viernes Santo, 3 de abril de 2026. Una joven cofrade, emocionada durante la Semana Santa."
     },
     {
       "archivo": "foto-1795020580943-92.jpg",
