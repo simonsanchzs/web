@@ -379,7 +379,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794929104118-87.jpg",
-      "pie": ""
+      "pie": "L'Hospitalet de Llobregat, 2 de septiembre de 2026. Ensayo de Kurios del Cirque du Soleil."
     },
     {
       "archivo": "foto-1794929106629-88.jpg",
