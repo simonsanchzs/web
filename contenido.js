@@ -163,7 +163,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860049274-16.jpg",
-      "pie": ""
+      "pie": "Barcelona, 23 de abril de 2026. El cineasta Pedro Almodóvar."
     },
     {
       "archivo": "foto-1794860064849-38.jpg",
