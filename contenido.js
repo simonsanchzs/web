@@ -251,7 +251,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867189487-54.jpg",
-      "pie": ""
+      "pie": "Barcelona Culinary Hub, L'Hospitalet de Llobregat, 24 de marzo de 2026. Martín Berasategui, el president Salvador Illa y otras autoridades prueban elaboraciones durante la presentación de la alianza de la escuela con el cocinero."
     },
     {
       "archivo": "foto-1794920876090-148.jpg",
