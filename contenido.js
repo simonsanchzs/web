@@ -255,7 +255,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920876090-148.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Con gesto de extrañeza y sin saber bien qué le han hecho, una mujer se tapa la boca tras la consulta dental mientras atienden a otros pacientes."
     },
     {
       "archivo": "foto-1794867187228-53.jpg",
