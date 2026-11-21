@@ -331,7 +331,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795020587345-93.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Despacho de una de las pequeñas consultas de la región, con Samba, uno de sus responsables, sentado."
     },
     {
       "archivo": "foto-1794920903414-153.jpg",
