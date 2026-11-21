@@ -243,7 +243,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867183107-51.jpg",
-      "pie": "Barcelona, 5 de octubre de 2025. Una niña, con una kufiya sobre los hombros, observa el resplandor de las bengalas durante la manifestación por Palestina."
+      "pie": "Barcelona, 5 de octubre de 2025. En la zona del puerto, una niña con una kufiya sobre los hombros observa el resplandor de las bengalas durante la manifestación por Palestina."
     },
     {
       "archivo": "foto-1794867184953-52.jpg",
