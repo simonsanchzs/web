@@ -11,7 +11,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860022141-2.jpg",
-      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Un auxiliar realiza el examen previo a una paciente antes de pasar a consulta, atendida por la ONG Acción Senegal."
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Un auxiliar realiza el reconocimiento previo a una paciente antes de pasar a consulta, atendida por la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794860023757-20.jpg",
