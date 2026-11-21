@@ -111,7 +111,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795118022229-96.jpg",
-      "pie": ""
+      "pie": "Plaça d'Artós, Barcelona, 19 de noviembre de 2026. Isabel Díaz Ayuso, presidenta de la Comunidad de Madrid, camino de la salida del mitin del PP, rodeada de simpatizantes y cámaras, en plena campaña del 29-N."
     },
     {
       "archivo": "foto-1794866620510-68.jpg",
