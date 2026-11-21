@@ -27,7 +27,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794921537638-81.jpg",
-      "pie": ""
+      "pie": "Arc de Triomf, Barcelona, 8 de agosto de 2024. Carles Puigdemont saluda en su mitin tras regresar a Cataluña, horas antes de abandonar de nuevo el país."
     },
     {
       "archivo": "foto-1794860026886-14.jpg",
