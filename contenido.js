@@ -279,7 +279,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862382199-58.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. En la calle Balmes, un antidisturbio se abalanza sobre un manifestante caído en el suelo durante los disturbios de la noche de la huelga general."
     },
     {
       "archivo": "foto-1794862383501-59.jpg",
