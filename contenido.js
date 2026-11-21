@@ -351,7 +351,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920898001-144.jpg",
-      "pie": ""
+      "pie": "Spotify Camp Nou, Barcelona, 2026. Pau Cubarsí observa en el monitor del VAR, junto al banquillo, una jugada revisada durante un partido de Champions League."
     },
     {
       "archivo": "foto-1794928219963-82.jpg",
