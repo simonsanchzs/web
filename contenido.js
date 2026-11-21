@@ -215,7 +215,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860078256-10.jpg",
-      "pie": "Región de Kédougou, Senegal, noviembre de 2026. En una guardería, un niño descansa mientras que, a la izquierda, se ve una clase."
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. En una guardería donde colabora la ONG Acción Senegal, un niño descansa mientras que, a la izquierda, se ve una clase."
     },
     {
       "archivo": "foto-1794865067958-45.jpg",
