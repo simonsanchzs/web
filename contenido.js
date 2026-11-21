@@ -275,7 +275,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920879015-152.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una dentista de la ONG Acción Senegal extrae una muela a una paciente que, con las manos sobre la cara, se sostiene el rostro entre la tensión y los nervios."
     },
     {
       "archivo": "foto-1794862382199-58.jpg",
