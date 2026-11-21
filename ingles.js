@@ -20,7 +20,7 @@ window.PIES_EN = {
 "foto-1794860027967-18.jpg": "Badalona, 17 December 2025. The Mossos d'Esquadra begin to charge at the people trying to stop the eviction of the former B9 secondary school.",
 "foto-1795018051861-89.jpg": "Parlament de Catalunya, Barcelona, 2024. Salvador Illa, leader of the PSC and then candidate for president of the Generalitat, at a press conference.",
 "foto-1794860041275-22.jpg": "Estadi Olímpic Lluís Companys, Barcelona, 9 June 2026. A priest hears the confession of a young worshipper during the prayer vigil for Pope Leo XIV's visit.",
-"foto-1794860030431-24.jpg": "Marseille, France, 24 October 2026. Two protesters push a skip down the street to block the road and build a barricade.",
+"foto-1794860030431-24.jpg": "Marseille, France, 24 October 2026. Two protesters push a rubbish container down the street to block the road and build a barricade.",
 "foto-1794862353119-51.jpg": "Kédougou region, Senegal, November 2026. Two women, admitted and on IV drips, in a shared ward at a health centre where the NGO Acción Senegal works.",
 "foto-1794860042855-21.jpg": "Spotify Camp Nou, Barcelona, 18 March 2026. Lamine Yamal steps up to take the penalty that, on the stroke of half-time, put Barça back in front (3-2) against Newcastle.",
 "foto-1794860032266-12.jpg": "General strike in Barcelona, 11 November 2026. Guardia Urbana officers pin two people to the ground during the morning pickets.",
@@ -94,7 +94,7 @@ window.PIES_EN = {
 "foto-1794929099189-85.jpg": "Barcelona, 12 July 2026. Albert Dalmau, the Catalan government's conseller de la Presidència, in his office at the Parlament.",
 "foto-1794929101543-86.jpg": "Barcelona Culinary Hub, L'Hospitalet de Llobregat, 24 March 2026. Martín Berasategui welcomes with a handshake the officials attending the presentation of the partnership with the school.",
 "foto-1794929104118-87.jpg": "L'Hospitalet de Llobregat, 2 September 2026. Rehearsal of Cirque du Soleil's Kurios.",
-"foto-1794929106629-88.jpg": "Passeig de Gràcia, Barcelona, 6 October 2026. Protesters carry a metal barrier past burning skips in the night-time disturbances after the housing protest.",
+"foto-1794929106629-88.jpg": "Passeig de Gràcia, Barcelona, 6 October 2026. Protesters carry a metal barrier past burning rubbish containers in the night-time disturbances after the housing protest.",
 "foto-1795022320137-90.jpg": "Spotify Camp Nou, Barcelona, 10 May 2026. FC Barcelona and Real Madrid wait for a corner to come in during the Clásico (2-0) that crowned Barça league champions."
 };
 
