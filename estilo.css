@@ -35,7 +35,7 @@ body.portada{overflow:hidden}
 .lang-info{position:fixed;bottom:20px;z-index:11;color:#000}
 .lang-info button{color:#000}
 /* Móvil: el selector sube por encima de la línea de Instagram y el correo para no solaparse */
-@media only screen and (max-width:600px){.lang-info{bottom:56px}.info{padding-bottom:104px}}
+@media only screen and (max-width:600px){.lang-info{bottom:56px}.info{padding-bottom:160px}}
 /* Fondo negro liso al 65 %, cubre toda la foto */
 .velo{background:rgba(0,0,0,.65);padding:10%}
 
