@@ -39,7 +39,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860038130-28.jpg",
-      "pie": ""
+      "pie": "Paseo de Gracia con Gran Vía, Barcelona, 6 de octubre de 2026. Carga de los Mossos d'Esquadra al final de la protesta por la vivienda."
     },
     {
       "archivo": "foto-1794860048137-29.jpg",
