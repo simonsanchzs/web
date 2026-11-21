@@ -215,7 +215,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860078256-10.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. En una guardería, un niño descansa mientras que, a la izquierda, se ve una clase."
     },
     {
       "archivo": "foto-1794865067958-45.jpg",
