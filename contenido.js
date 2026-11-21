@@ -191,11 +191,11 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860069246-3.jpg",
-      "pie": ""
+      "pie": "Palau de Congressos de Catalunya, Barcelona, 23 de mayo de 2024. El ministro de Economía, Carlos Cuerpo, atiende a los medios antes de su intervención en la 39.ª Reunión Anual del Círculo de Economía."
     },
     {
       "archivo": "foto-1795038740055-95.jpg",
-      "pie": "Palau de Congressos de Catalunya, Barcelona, 23 de mayo de 2024. El ministro de Economía, Carlos Cuerpo, atiende a los medios antes de su intervención en la 39.ª Reunión Anual del Círculo de Economía."
+      "pie": "Barcelona, 22 de mayo de 2024. Felipe VI y Pedro Sánchez, a punto de estrechar la mano de Pere Aragonès, presidente de la Generalitat en funciones, en la inauguración de la reunión anual del Círculo de Economía."
     },
     {
       "archivo": "foto-1794860073542-6.jpg",
