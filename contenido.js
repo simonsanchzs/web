@@ -115,7 +115,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794866620510-68.jpg",
-      "pie": ""
+      "pie": "Palau Victòria Eugènia, Montjuïc, Barcelona, 7 de marzo de 2024. El cineasta Tim Burton, en la inauguración de Tim Burton's Labyrinth, la exposición inmersiva sobre su universo creativo."
     },
     {
       "archivo": "foto-1794860045354-17.jpg",
