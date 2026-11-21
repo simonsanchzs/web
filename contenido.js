@@ -211,7 +211,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794862359755-55.jpg",
-      "pie": ""
+      "pie": "Barcelona, 11 de noviembre de 2026. Asomados a sus balcones, varios vecinos contemplan la calle en llamas por los disturbios de la noche de la huelga general."
     },
     {
       "archivo": "foto-1794860078256-10.jpg",
