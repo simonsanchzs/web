@@ -355,7 +355,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794928219963-82.jpg",
-      "pie": ""
+      "pie": "Barcelona, 27 de septiembre de 2026. Ernestina Torelló posa en el Círculo del Liceo, club social fundado en 1847, que por primera vez preside una mujer."
     },
     {
       "archivo": "foto-1794920900213-146.jpg",
