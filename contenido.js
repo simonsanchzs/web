@@ -167,7 +167,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860064849-38.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Alumnos y alumnas durante una clase en una escuela de la región."
     },
     {
       "archivo": "foto-1794860066281-39.jpg",
