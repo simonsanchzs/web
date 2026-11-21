@@ -319,7 +319,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920884487-149.jpg",
-      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una niña y su hermano acompañan y esperan a su madre en la jornada de atención de la ONG Acción Senegal."
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una niña y su hermano acompañan y esperan a su madre en la jornada de atención odontológica de la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794867204518-66.jpg",
