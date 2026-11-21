@@ -83,7 +83,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860041275-22.jpg",
-      "pie": ""
+      "pie": "Estadio Olímpico Lluís Companys, Barcelona, 9 de junio de 2026. Un sacerdote confiesa a una joven fiel durante la vigilia de oración de la visita del papa León XIV."
     },
     {
       "archivo": "foto-1794860030431-24.jpg",
