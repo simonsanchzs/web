@@ -179,7 +179,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860052866-31.jpg",
-      "pie": "Avenida Diagonal, Barcelona, 28 de septiembre de 2026. Una mujer mayor, agarrada a una farola frente al Palau de Congressos, se convierte en símbolo de resistencia en la protesta por la vivienda."
+      "pie": "Avenida Diagonal, Barcelona, 28 de septiembre de 2026. Una mujer mayor, agarrada a una farola frente al Palau de Congressos y con una bandera de Palestina en señal de apoyo, se convierte en símbolo de resistencia en la protesta por la vivienda."
     },
     {
       "archivo": "foto-1794860039538-19.jpg",
