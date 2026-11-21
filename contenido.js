@@ -55,7 +55,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860072115-5.jpg",
-      "pie": ""
+      "pie": "Plaza de Cataluña, Barcelona, 5 de octubre de 2025. Un hombre, tendido en el suelo tras caer entre las carreras y los disturbios de la manifestación por Palestina."
     },
     {
       "archivo": "foto-1794928331196-83.jpg",
