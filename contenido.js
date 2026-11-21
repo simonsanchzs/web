@@ -15,7 +15,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860023757-20.jpg",
-      "pie": ""
+      "pie": "Manifestación por Palestina en Barcelona, 5 de octubre de 2025. Una mujer, desconcertada tras la detención de un acompañante en plena protesta."
     },
     {
       "archivo": "foto-1794860025431-8.jpg",
