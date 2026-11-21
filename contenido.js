@@ -363,7 +363,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920905801-147.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Enfermero de un centro de salud de uno de los poblados de la región, donde colabora la ONG Acción Senegal."
     },
     {
       "archivo": "foto-1794929096170-83.jpg",
