@@ -327,7 +327,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920887006-141.jpg",
-      "pie": ""
+      "pie": "Spotify Camp Nou, Barcelona, 18 de marzo de 2026. Sala de control del dispositivo de seguridad de los Mossos d'Esquadra durante el Barça–Newcastle, con vistas al campo y a las gradas llenas."
     },
     {
       "archivo": "foto-1795020587345-93.jpg",
