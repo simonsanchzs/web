@@ -307,7 +307,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794920882014-150.jpg",
-      "pie": ""
+      "pie": "Región de Kédougou, Senegal, noviembre de 2026. Un hombre reza de noche frente a su casa."
     },
     {
       "archivo": "foto-1794867202302-65.jpg",
