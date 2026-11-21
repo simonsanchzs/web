@@ -71,7 +71,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794927403236-82.jpg",
-      "pie": ""
+      "pie": "Barcelona, 16 de julio de 2025. Lamine Yamal, el día de su renovación con el FC Barcelona hasta 2031."
     },
     {
       "archivo": "foto-1794860027967-18.jpg",
