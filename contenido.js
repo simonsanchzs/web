@@ -203,7 +203,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1795038744616-48.jpg",
-      "pie": ""
+      "pie": "Spotify Camp Nou, Barcelona, 10 de mayo de 2026. Durante el Clásico, Fran García y Thibaut Courtois sacan del campo un balón de playa que había aparecido en el césped."
     },
     {
       "archivo": "foto-1794862358196-50.jpg",
