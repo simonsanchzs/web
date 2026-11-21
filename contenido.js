@@ -299,7 +299,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867199923-63.jpg",
-      "pie": "Barcelona, 2026. Una mujer religiosa, con rosario y crucifijo, aguarda frente a una clínica donde se practican interrupciones voluntarias del embarazo."
+      "pie": "Barcelona, 11 de noviembre de 2025. Miembro de un grupo antiabortista que reza frente a una clínica donde se practican interrupciones voluntarias del embarazo."
     },
     {
       "archivo": "foto-1794866166798-62.jpg",
