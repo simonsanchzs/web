@@ -10,14 +10,25 @@
   if (C.instagram) $("insta").href = C.instagram; else $("insta").style.display = "none";
   if (C.email) { $("mail").href = "mailto:" + C.email; $("mail").textContent = C.email; } else $("mail").style.display = "none";
 
-  // Página de info
-  var info = $("info");
-  info.innerHTML = '<h1>' + esc(C.nombre || "") + '</h1>' + (C.info || []).map(function(bloque){
-    return bloque.map(function(l){
-      return "<p>" + esc(l).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function(_,t,u){
-        return '<a href="'+u+'"'+(/^http/.test(u)?' target="_blank" rel="noopener"':'')+'>'+t+'</a>'; }) + "</p>";
-    }).join("");
-  }).join("<hr>") + "<hr>";
+  // Página de info (con selector ES/EN; cada vez que se entra empieza en español)
+  var info = $("info"), selInfo = $("langInfo");
+  function pintarInfo(l){
+    var en = l === "en" && Array.isArray(window.INFO_EN);
+    var datos = en ? window.INFO_EN : (C.info || []);
+    info.innerHTML = '<h1>' + esc(C.nombre || "") + '</h1>' + datos.map(function(bloque){
+      return bloque.map(function(l){
+        return "<p>" + esc(l).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function(_,t,u){
+          return '<a href="'+u+'"'+(/^http/.test(u)?' target="_blank" rel="noopener"':'')+'>'+t+'</a>'; }) + "</p>";
+      }).join("");
+    }).join("<hr>") + "<hr>";
+    info.lang = en ? "en" : "es";
+    selInfo.hidden = !Array.isArray(window.INFO_EN);
+    [].forEach.call(selInfo.querySelectorAll("button"), function(b){ b.classList.toggle("on", b.getAttribute("data-l") === (en ? "en" : "es")); });
+  }
+  selInfo.addEventListener("click", function(e){
+    var b = e.target.closest("button"); if (b) pintarInfo(b.getAttribute("data-l"));
+  });
+  pintarInfo("es");
 
   // Portada
   var indice = null;
@@ -27,6 +38,7 @@
   function vista(){
     var v = enInfo();
     info.hidden = !v; pase.hidden = v;
+    if (v) pintarInfo("es"); else selInfo.hidden = true;
     $("btnIndice").hidden = v || !fotos.length;
     if (v && indiceAbierto()) cerrarIndice();
     document.body.classList.toggle("portada", !v);

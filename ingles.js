@@ -97,3 +97,16 @@ window.PIES_EN = {
 "foto-1794929106629-88.jpg": "Paseo de Gracia, Barcelona, 6 October 2026. Demonstrators carry a metal barrier past burning dumpsters, in the night-time disturbances after the housing protest.",
 "foto-1795022320137-90.jpg": "Spotify Camp Nou, Barcelona, 10 May 2026. FC Barcelona and Real Madrid wait for a corner kick to arrive in the Clásico (2-0) that crowned Barça league champions."
 };
+
+/* Página de info en inglés (mismos bloques y líneas que en contenido.js). Si cambias el texto en español, actualiza también este. */
+window.INFO_EN = [
+  [
+    "Photographer focused on photojournalism and documentary reportage. General training at IEFC, Barcelona, and specialisation in journalism at the University of Hannover, Germany.",
+    "Telling stories through photography is what has moved me ever since I delved into the diversity of the world of the image.",
+    "The camera is my “psychoanalyst's couch” for documenting and interpreting reality and, in the most genuine way, freezing a photographic narrative."
+  ],
+  [
+    "Instagram: [simonsanchzs](https://www.instagram.com/simonsanchzs/)",
+    "Contact: [simonsanchzs@gmail.com](mailto:simonsanchzs@gmail.com)"
+  ]
+];
