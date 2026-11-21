@@ -87,7 +87,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860030431-24.jpg",
-      "pie": ""
+      "pie": "Marsella, Francia, 24 de octubre de 2026. Dos manifestantes empujan un contenedor calle abajo para cortar el paso y levantar una barricada."
     },
     {
       "archivo": "foto-1794862353119-51.jpg",
