@@ -299,7 +299,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867199923-63.jpg",
-      "pie": ""
+      "pie": "Barcelona, 2026. Una mujer religiosa, con rosario y crucifijo, aguarda frente a una clínica donde se practican interrupciones voluntarias del embarazo."
     },
     {
       "archivo": "foto-1794866166798-62.jpg",
