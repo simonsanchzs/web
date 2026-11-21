@@ -75,7 +75,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860027967-18.jpg",
-      "pie": ""
+      "pie": "Badalona, 17 de diciembre de 2025. Los Mossos d'Esquadra comienzan a cargar contra las personas que intentaban frenar el desalojo del antiguo instituto B9."
     },
     {
       "archivo": "foto-1795018051861-89.jpg",
