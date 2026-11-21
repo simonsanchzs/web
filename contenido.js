@@ -223,7 +223,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794867171406-45.jpg",
-      "pie": ""
+      "pie": "Barcelona, 10 de mayo de 2026. Entre bengalas y humo, un seguidor del FC Barcelona con la camiseta de Ronaldinho levanta la señera en plaza de Cataluña, en la celebración de la Liga."
     },
     {
       "archivo": "foto-1794867173994-46.jpg",
