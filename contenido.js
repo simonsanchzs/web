@@ -67,7 +67,7 @@ window.CONTENIDO = {
     },
     {
       "archivo": "foto-1794860076737-9.jpg",
-      "pie": "Badalona, 17 de diciembre de 2025. Un residente del antiguo instituto B9 abandona el edificio con sus maletas durante el desalojo, entre agentes de los Mossos d'Esquadra, en busca de otro lugar donde ir."
+      "pie": "Badalona, 17 de diciembre de 2025. Un residente del antiguo instituto B9 se marcha con sus maletas, obligado a dejar su hogar ante la llegada de los Mossos d'Esquadra para desalojar el edificio."
     },
     {
       "archivo": "foto-1794927403236-82.jpg",
