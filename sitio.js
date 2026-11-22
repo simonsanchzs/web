@@ -88,7 +88,16 @@
   function sig(){ ver(i+1); } function ant(){ ver(i-1); }
   // Si una foto no se puede cargar (por ejemplo, ya eliminada), salta a la siguiente
   var saltos = 0;
-  img.addEventListener("load", function(){ saltos = 0; });
+  img.addEventListener("load", function(){ saltos = 0; colocarDado(); });
+  // Móvil vertical: el dado queda a media altura entre el borde inferior de la foto y la línea de Instagram y el correo
+  function colocarDado(){
+    var b = $("btnIndice");
+    if (window.innerWidth > 600 || window.innerHeight <= 500) { b.style.bottom = ""; return; }
+    var r = marco.getBoundingClientRect(); if (!r.height) return;
+    var centro = Math.min((r.bottom + window.innerHeight - 40) / 2, window.innerHeight - 56);
+    b.style.bottom = Math.round(window.innerHeight - centro - 14) + "px";
+  }
+  window.addEventListener("resize", colocarDado);
   img.addEventListener("error", function(){ if (++saltos < fotos.length) sig(); });
 
   // Deslizar con el dedo o el ratón
