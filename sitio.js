@@ -120,14 +120,21 @@
   });
 
   // Collage con todas las fotos (botón del dado), de 20 en 20. Tocar una foto va directamente a ella; tocar fuera vuelve a la foto actual.
+  // En móvil el collage lleva menos fotos por página (8) para que se vean más grandes
+  var MOVIL = "(max-width:600px),(max-height:500px)";
+  function esMovil(){ return window.matchMedia(MOVIL).matches; }
   var PAG = 20, pagina = 0;
   indice = $("indice"); var rejilla = $("rejilla"), panel = $("panel");
   function indiceAbierto(){ return !!indice && !indice.hidden; }
   function miniatura(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/min/" + encodeURIComponent(f.archivo); }
   // El panel ocupa exactamente el marco de la foto; la rejilla elige las columnas y filas que dan miniaturas más grandes
-  var FORMAS = [[5,4],[4,5],[6,4],[7,3],[3,7],[10,2],[2,10]], GAP = 5;
+  var FORMAS_PC = [[5,4],[4,5],[6,4],[7,3],[3,7],[10,2],[2,10]], FORMAS_MOVIL = [[2,4],[4,2]], GAP = 5;
   function ajustar(){
-    var r = marco.getBoundingClientRect();
+    var FORMAS = esMovil() ? FORMAS_MOVIL : FORMAS_PC;
+    // En móvil el panel ocupa toda la zona que puede ocupar una foto (más espacio para miniaturas grandes)
+    var r = esMovil()
+      ? { left: (window.innerWidth - window.innerWidth * .95) / 2, top: 56, width: window.innerWidth * .95, height: window.innerHeight - 112 }
+      : marco.getBoundingClientRect();
     panel.style.left = r.left + "px"; panel.style.top = r.top + "px"; panel.style.width = r.width + "px"; panel.style.height = r.height + "px";
     var px = r.width < 500 ? 30 : 48, W = r.width - 2 * px, H = r.height - 28 - 10, mejor = null;
     FORMAS.forEach(function(f){
@@ -165,7 +172,7 @@
     for (var m = hasta; m < Math.min(fotos.length, hasta + PAG); m++) new Image().src = miniatura(fotos[m]);
   }
   function abrirIndice(){
-    if (window.matchMedia("(max-width:600px),(max-height:500px)").matches) return;   // en móvil no hay collage
+    PAG = esMovil() ? 8 : 20;
     cerrar();
     mostrarPagina(Math.floor(i / PAG));
     indice.hidden = false; document.body.classList.add("indice-abierto");
