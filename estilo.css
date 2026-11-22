@@ -44,7 +44,7 @@ body.portada{overflow:hidden}
 /* Móvil (pantalla estrecha o móvil en horizontal): el dado queda más pequeño para no pisar Instagram ni el correo */
 @media only screen and (max-width:600px),only screen and (max-height:500px){.e-indice{width:32px;height:28px;bottom:18px}.indice-abierto .pase{visibility:hidden}}
 /* Móvil vertical: el dado sube sobre la línea de Instagram y el correo, que ocupan casi todo el ancho */
-@media only screen and (max-width:600px){.e-indice{bottom:48px}}
+@media only screen and (max-width:600px){.e-indice{bottom:68px}}
 /* Collage: el fondo fuera del marco de la foto sigue en blanco; solo el marco se cubre con negro al 65 %, como los pies de foto */
 .indice{position:fixed;inset:0;z-index:10;background:transparent}
 .panel{position:absolute;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;overflow:hidden}

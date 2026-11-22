@@ -120,7 +120,7 @@
   });
 
   // Collage con todas las fotos (botón del dado), de 20 en 20. Tocar una foto va directamente a ella; tocar fuera vuelve a la foto actual.
-  // En móvil el collage lleva menos fotos por página (8) para que se vean más grandes
+  // En móvil el collage lleva menos fotos por página (miniaturas horizontales, cuantas quepan)
   var MOVIL = "(max-width:600px),(max-height:500px)";
   function esMovil(){ return window.matchMedia(MOVIL).matches; }
   var PAG = 20, pagina = 0;
@@ -128,16 +128,35 @@
   function indiceAbierto(){ return !!indice && !indice.hidden; }
   function miniatura(f){ return /^(https?:)?\//.test(f.archivo) ? f.archivo : "fotos/min/" + encodeURIComponent(f.archivo); }
   // El panel ocupa exactamente el marco de la foto; la rejilla elige las columnas y filas que dan miniaturas más grandes
-  var FORMAS_PC = [[5,4],[4,5],[6,4],[7,3],[3,7],[10,2],[2,10]], FORMAS_MOVIL = [[2,4],[4,2]], GAP = 5;
-  function ajustar(){
-    var FORMAS = esMovil() ? FORMAS_MOVIL : FORMAS_PC;
-    // En móvil el panel ocupa toda la zona que puede ocupar una foto (más espacio para miniaturas grandes)
-    var r = esMovil()
+  var FORMAS_PC = [[5,4],[4,5],[6,4],[7,3],[3,7],[10,2],[2,10]], GAP = 5;
+  // Zona que ocupa el collage. En móvil: todo el espacio que puede ocupar una foto; en el resto, el marco de la foto actual
+  function rectPanel(){
+    return esMovil()
       ? { left: (window.innerWidth - window.innerWidth * .95) / 2, top: 56, width: window.innerWidth * .95, height: window.innerHeight - 112 }
       : marco.getBoundingClientRect();
+  }
+  // Móvil: miniaturas horizontales (3:2), las más grandes posibles con al menos 2 filas; cuantas filas quepan
+  function formaMovil(){
+    var r = rectPanel(), px = 30;
+    var W = r.width - 2 * px, H = r.height - 28 - 10 - (window.innerWidth <= 600 ? 36 : 0), mejor = null;
+    for (var c = 2; c <= 8; c++) {
+      var w = Math.floor((W - (c - 1) * GAP) / c), h = Math.floor(w * 2 / 3), filas = Math.floor((H + GAP) / (h + GAP));
+      if (filas >= 2 && w >= 40) { mejor = { c: c, w: w, h: h, filas: filas }; break; }
+    }
+    return mejor || { c: 2, w: 100, h: 66, filas: 2 };
+  }
+  function ajustar(){
+    var r = rectPanel();
     panel.style.left = r.left + "px"; panel.style.top = r.top + "px"; panel.style.width = r.width + "px"; panel.style.height = r.height + "px";
+    if (esMovil()) {
+      var m = formaMovil();
+      rejilla.style.gridTemplateColumns = "repeat(" + m.c + "," + m.w + "px)";
+      rejilla.style.gridAutoRows = m.h + "px";
+      rejilla.style.marginTop = "14px";
+      return;
+    }
     var px = r.width < 500 ? 30 : 48, W = r.width - 2 * px, H = r.height - 28 - 10, mejor = null;
-    FORMAS.forEach(function(f){
+    FORMAS_PC.forEach(function(f){
       var t = Math.floor(Math.min((W - (f[0] - 1) * GAP) / f[0], (H - (f[1] - 1) * GAP) / f[1]));
       if (!mejor || t > mejor.t) mejor = { c: f[0], t: t };
     });
@@ -146,7 +165,13 @@
     rejilla.style.gridAutoRows = t + "px";
     rejilla.style.marginTop = "14px";
   }
-  window.addEventListener("resize", function(){ if (indiceAbierto()) ajustar(); });
+  function fotosPorPagina(){ if (!esMovil()) return 20; var m = formaMovil(); return m.c * m.filas; }
+  window.addEventListener("resize", function(){
+    if (!indiceAbierto()) return;
+    var antes = PAG; PAG = fotosPorPagina();
+    if (PAG !== antes) mostrarPagina(Math.floor(pagina * antes / PAG));
+    ajustar();
+  });
   function totalPaginas(){ return Math.ceil(fotos.length / PAG); }
   function mostrarPagina(p){
     pagina = Math.max(0, Math.min(totalPaginas() - 1, p));
@@ -172,7 +197,7 @@
     for (var m = hasta; m < Math.min(fotos.length, hasta + PAG); m++) new Image().src = miniatura(fotos[m]);
   }
   function abrirIndice(){
-    PAG = esMovil() ? 8 : 20;
+    PAG = fotosPorPagina();
     cerrar();
     mostrarPagina(Math.floor(i / PAG));
     indice.hidden = false; document.body.classList.add("indice-abierto");
