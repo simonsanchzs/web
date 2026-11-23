@@ -178,18 +178,21 @@
   window.addEventListener("resize", function(){
     if (!indiceAbierto()) return;
     var antes = PAG; PAG = fotosPorPagina();
-    if (PAG !== antes) mostrarPagina(Math.floor(pagina * antes / PAG));
+    if (PAG !== antes) { vaciar(); mostrarPagina(Math.floor(pagina * antes / PAG)); }
     ajustar();
   });
   function totalPaginas(){ return Math.ceil(fotos.length / PAG); }
-  function mostrarPagina(p){
-    pagina = Math.max(0, Math.min(totalPaginas() - 1, p));
-    rejilla.innerHTML = "";
-    var desde = pagina * PAG, hasta = Math.min(fotos.length, desde + PAG);
+  // Cada página se construye una sola vez y se conserva (oculta), junto con las vecinas ya cargadas: pasar de página es instantáneo
+  var paginas = {};
+  function vaciar(){ rejilla.innerHTML = ""; paginas = {}; }
+  function crearPagina(p){
+    if (p < 0 || p >= totalPaginas()) return null;
+    if (paginas[p]) return paginas[p];
+    var el = document.createElement("div"); el.className = "pagina"; el.hidden = true;
+    var desde = p * PAG, hasta = Math.min(fotos.length, desde + PAG);
     for (var n = desde; n < hasta; n++) (function(n){
       var f = fotos[n];
-      var b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", "Foto " + (n + 1));
-      if (n === i) b.className = "actual";
+      var b = document.createElement("button"); b.type = "button"; b.setAttribute("aria-label", "Foto " + (n + 1)); b._n = n;
       var im = document.createElement("img"); im.alt = ""; im.decoding = "async";
       im.onerror = function(){   // si no hay miniatura usa la grande; si tampoco existe la foto, no se muestra el hueco
         im.onerror = function(){ b.remove(); };
@@ -198,15 +201,25 @@
       im.src = miniatura(f);
       b.appendChild(im);
       b.addEventListener("click", function(){ if (deslizado) { deslizado = false; return; } cerrarIndice(true); ver(n); });
-      rejilla.appendChild(b);
+      el.appendChild(b);
     })(n);
+    rejilla.appendChild(el);
+    return (paginas[p] = el);
+  }
+  function mostrarPagina(p){
+    pagina = Math.max(0, Math.min(totalPaginas() - 1, p));
+    var pg = crearPagina(pagina);
+    for (var k in paginas) paginas[k].hidden = (+k !== pagina);
+    [].forEach.call(pg.children, function(b){ b.classList.toggle("actual", b._n === i); });
     $("pagAnt").hidden = pagina === 0; $("pagSig").hidden = pagina >= totalPaginas() - 1;
     $("pagNum").textContent = totalPaginas() > 1 ? (pagina + 1) + " / " + totalPaginas() : "";
-    // Precarga las miniaturas de la página siguiente
-    for (var m = hasta; m < Math.min(fotos.length, hasta + PAG); m++) new Image().src = miniatura(fotos[m]);
+    // Prepara las páginas vecinas mientras el navegador está libre
+    var yo = pagina;
+    setTimeout(function(){ if (yo !== pagina) return; crearPagina(yo + 1); setTimeout(function(){ if (yo === pagina) crearPagina(yo - 1); }, 150); }, 80);
   }
   function abrirIndice(){
-    PAG = fotosPorPagina();
+    var nuevoPAG = fotosPorPagina();
+    if (nuevoPAG !== PAG) { PAG = nuevoPAG; vaciar(); }
     cerrar();
     mostrarPagina(Math.floor(i / PAG));
     indice.hidden = false; document.body.classList.add("indice-abierto");

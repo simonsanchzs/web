@@ -46,7 +46,8 @@ body.portada{overflow:hidden}
 /* Móvil vertical: el dado sube sobre la línea de Instagram y el correo, que ocupan casi todo el ancho */
 @media only screen and (max-width:600px){.e-indice{bottom:68px}}
 /* Collage: el fondo fuera del marco de la foto sigue en blanco; solo el marco se cubre con negro al 65 %, como los pies de foto */
-.indice{position:fixed;inset:0;z-index:10;background:transparent}
+.indice{position:fixed;inset:0;z-index:10;background:transparent;touch-action:none}
+.pagina{display:contents}
 .panel{position:absolute;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .rejilla{display:grid;gap:5px}
 .rejilla button{display:block;width:100%;height:100%;padding:0;border:0;background:#333;cursor:pointer;-webkit-tap-highlight-color:transparent}
