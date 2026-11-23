@@ -408,6 +408,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465793584-101.jpg",
       "pie": "Kioto, Japón, 2025."
+    },
+    {
+      "archivo": "foto-1795465835056-102.jpg",
+      "pie": "Álex Abrines, durante una sesión fotográfica para una campaña publicitaria en el Palau Blaugrana, Barcelona, 2025."
     }
   ],
   "info": [
