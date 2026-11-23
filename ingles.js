@@ -96,7 +96,8 @@ window.PIES_EN = {
 "foto-1794929104118-87.jpg": "L'Hospitalet de Llobregat, 2 September 2026. Rehearsal of Cirque du Soleil's Kurios.",
 "foto-1794929106629-88.jpg": "Passeig de Gràcia, Barcelona, 6 October 2026. Protesters carry a metal barrier past burning rubbish containers in the night-time disturbances after the housing protest.",
 "foto-1795022320137-90.jpg": "Spotify Camp Nou, Barcelona, 10 May 2026. FC Barcelona and Real Madrid wait for a corner to come in during the Clásico (2-0) that crowned Barça league champions.",
-"foto-1795465541385-97.jpg": "Shibuya, Tokyo, 2025."
+"foto-1795465541385-97.jpg": "Shibuya, Tokyo, 2025.",
+"foto-1795465649581-98.jpg": "Varanasi, India, 2018."
 };
 
 /* Página de info en inglés (mismos bloques y líneas que en contenido.js). Si cambias el texto en español, actualiza también este. */

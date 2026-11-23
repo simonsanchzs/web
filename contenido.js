@@ -392,6 +392,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465541385-97.jpg",
       "pie": "Shibuya, Tokio, 2025."
+    },
+    {
+      "archivo": "foto-1795465649581-98.jpg",
+      "pie": "Varanasi, India, 2018."
     }
   ],
   "info": [
