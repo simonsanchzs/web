@@ -290,10 +290,6 @@ window.CONTENIDO = {
       "pie": "Aeropuerto de El Prat, Barcelona, 2026. Despedida de los misioneros mormones que concluyen su año de misión en Barcelona, con la pareja que acoge a los nuevos."
     },
     {
-      "archivo": "foto-1795466100000-107.jpg",
-      "pie": "Osaka, Japón, 2025."
-    },
-    {
       "archivo": "foto-1794867193669-56.jpg",
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. Habitación de un pequeño centro sanitario de la región, donde se atiende e ingresa a los pacientes."
     },
