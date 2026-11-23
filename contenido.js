@@ -396,6 +396,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465649581-98.jpg",
       "pie": "Varanasi, India, 2018."
+    },
+    {
+      "archivo": "foto-1795465741443-99.jpg",
+      "pie": "Monte Fuji, Japón, 2025."
     }
   ],
   "info": [
