@@ -424,6 +424,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465939996-105.jpg",
       "pie": "Japón, 2025."
+    },
+    {
+      "archivo": "foto-1795466000000-106.jpg",
+      "pie": "Varanasi, India, 2018."
     }
   ],
   "info": [
