@@ -198,16 +198,16 @@ window.CONTENIDO = {
       "pie": "Badalona, 17 de diciembre de 2025. Un residente del B9 abandona el edificio durante el desalojo, con gesto abatido y confuso, sin saber adónde ir ni qué opciones le quedan."
     },
     {
+      "archivo": "foto-1794860069246-3.jpg",
+      "pie": "Palau de Congressos de Catalunya, Barcelona, 23 de mayo de 2024. El ministro de Economía, Carlos Cuerpo, atiende a los medios antes de su intervención en la 39.ª Reunión Anual del Círculo de Economía."
+    },
+    {
       "archivo": "foto-1795465541385-97.jpg",
       "pie": "Shibuya, Tokio, 2025."
     },
     {
       "archivo": "foto-1794862356675-54.jpg",
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una paciente, nerviosa, espera a ser atendida por una dentista de la ONG Acción Senegal. Al fondo, una niña, inquieta, observa sin saber qué va a ocurrir."
-    },
-    {
-      "archivo": "foto-1794860069246-3.jpg",
-      "pie": "Palau de Congressos de Catalunya, Barcelona, 23 de mayo de 2024. El ministro de Economía, Carlos Cuerpo, atiende a los medios antes de su intervención en la 39.ª Reunión Anual del Círculo de Economía."
     },
     {
       "archivo": "foto-1795038740055-95.jpg",
@@ -232,6 +232,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794860078256-10.jpg",
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. En una guardería donde colabora la ONG Acción Senegal, un niño descansa mientras que, a la izquierda, se ve una clase."
+    },
+    {
+      "archivo": "foto-1795465912965-104.jpg",
+      "pie": "Nara, Japón, 2025."
     },
     {
       "archivo": "foto-1794865067958-45.jpg",
@@ -326,14 +330,6 @@ window.CONTENIDO = {
       "pie": "Sudáfrica, 2024."
     },
     {
-      "archivo": "foto-1795466000000-106.jpg",
-      "pie": "Varanasi, India, 2018."
-    },
-    {
-      "archivo": "foto-1795465912965-104.jpg",
-      "pie": "Nara, Japón, 2025."
-    },
-    {
       "archivo": "foto-1794867197475-62.jpg",
       "pie": "Spotify Camp Nou, Barcelona, 22 de noviembre de 2025. En su vuelta al Camp Nou tras jugar en Montjuïc, el Barça recibe al Athletic Club ante un estadio lleno."
     },
@@ -352,6 +348,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794867202302-65.jpg",
       "pie": "Tarragona, 12 de agosto de 2026. Cientos de personas se reúnen en una explanada a la espera del eclipse solar total, en el atardecer previo a la totalidad."
+    },
+    {
+      "archivo": "foto-1795466000000-106.jpg",
+      "pie": "Varanasi, India, 2018."
     },
     {
       "archivo": "foto-1795020585421-91.jpg",
