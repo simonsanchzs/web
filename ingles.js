@@ -103,7 +103,8 @@ window.PIES_EN = {
 "foto-1795465793584-101.jpg": "Kyoto, Japan, 2025.",
 "foto-1795465835056-102.jpg": "Álex Abrines during a photo shoot for an advertising campaign at the Palau Blaugrana, Barcelona, 2025.",
 "foto-1795465877380-103.jpg": "South Africa, 2024.",
-"foto-1795465912965-104.jpg": "Nara, Japan, 2025."
+"foto-1795465912965-104.jpg": "Nara, Japan, 2025.",
+"foto-1795465939996-105.jpg": "Japan, 2025."
 };
 
 /* Página de info en inglés (mismos bloques y líneas que en contenido.js). Si cambias el texto en español, actualiza también este. */
