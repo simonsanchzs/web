@@ -416,6 +416,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465877380-103.jpg",
       "pie": "Sudáfrica, 2024."
+    },
+    {
+      "archivo": "foto-1795465912965-104.jpg",
+      "pie": "Nara, Japón, 2025."
     }
   ],
   "info": [
