@@ -388,6 +388,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795022320137-90.jpg",
       "pie": "Spotify Camp Nou, Barcelona, 10 de mayo de 2026. El Fútbol Club Barcelona y el Real Madrid aguardan la llegada de un córner en el Clásico (2-0) que coronó al Barça campeón de Liga."
+    },
+    {
+      "archivo": "foto-1795465541385-97.jpg",
+      "pie": "Shibuya, Tokio, 2025."
     }
   ],
   "info": [
