@@ -174,6 +174,10 @@ window.CONTENIDO = {
       "pie": "Varanasi, India, 2018."
     },
     {
+      "archivo": "foto-1795466100000-107.jpg",
+      "pie": "Osaka, Japón, 2025."
+    },
+    {
       "archivo": "foto-1794860049274-16.jpg",
       "pie": "Barcelona, 23 de abril de 2026. El cineasta Pedro Almodóvar."
     },
@@ -428,6 +432,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795466000000-106.jpg",
       "pie": "Varanasi, India, 2018."
+    },
+    {
+      "archivo": "foto-1795466100000-107.jpg",
+      "pie": "Osaka, Japón, 2025."
     }
   ],
   "info": [
