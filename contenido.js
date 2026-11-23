@@ -400,6 +400,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465741443-99.jpg",
       "pie": "Monte Fuji, Japón, 2025."
+    },
+    {
+      "archivo": "foto-1795465773870-100.jpg",
+      "pie": "Monte Fuji, Japón, 2025."
     }
   ],
   "info": [

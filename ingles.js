@@ -98,7 +98,8 @@ window.PIES_EN = {
 "foto-1795022320137-90.jpg": "Spotify Camp Nou, Barcelona, 10 May 2026. FC Barcelona and Real Madrid wait for a corner to come in during the Clásico (2-0) that crowned Barça league champions.",
 "foto-1795465541385-97.jpg": "Shibuya, Tokyo, 2025.",
 "foto-1795465649581-98.jpg": "Varanasi, India, 2018.",
-"foto-1795465741443-99.jpg": "Mount Fuji, Japan, 2025."
+"foto-1795465741443-99.jpg": "Mount Fuji, Japan, 2025.",
+"foto-1795465773870-100.jpg": "Mount Fuji, Japan, 2025."
 };
 
 /* Página de info en inglés (mismos bloques y líneas que en contenido.js). Si cambias el texto en español, actualiza también este. */
