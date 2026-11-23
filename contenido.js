@@ -106,6 +106,10 @@ window.CONTENIDO = {
       "pie": "Passeig de Gràcia, Barcelona, 11 de noviembre de 2026. Durante los disturbios de la noche de la huelga general, una persona entra en la tienda de Apple a través de la puerta rota, con llamas en la entrada."
     },
     {
+      "archivo": "foto-1795465773870-100.jpg",
+      "pie": "Monte Fuji, Japón, 2025."
+    },
+    {
       "archivo": "foto-1794920872882-145.jpg",
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. Al fondo, dos dentistas de la ONG Acción Senegal tratan a un paciente. En primer plano, una mujer aguarda su turno con la mirada tensa y llena de incertidumbre."
     },
@@ -154,12 +158,20 @@ window.CONTENIDO = {
       "pie": "Pont del Treball Digne, Sant Andreu, Barcelona, 25 de marzo de 2026. Un agente de la Guardia Urbana vigila la zona durante el desalojo de dos asentamientos de personas sin hogar junto a las vías del tren."
     },
     {
+      "archivo": "foto-1795465835056-102.jpg",
+      "pie": "Álex Abrines, durante una sesión fotográfica para una campaña publicitaria en el Palau Blaugrana, Barcelona, 2025."
+    },
+    {
       "archivo": "foto-1794860060978-36.jpg",
       "pie": "Vía Laietana, Barcelona, 11 de noviembre de 2026. La Jefatura Superior de Policía de Cataluña, sede de la Policía Nacional, cubierta con lonas ante posibles lanzamientos y pintadas, durante la huelga general."
     },
     {
       "archivo": "foto-1794860033800-25.jpg",
       "pie": "Marsella, Francia, 24 de octubre de 2026. Un manifestante, disfrazado de oficial francés de época, ondea la bandera francesa desde lo alto de un monumento durante la protesta."
+    },
+    {
+      "archivo": "foto-1795465649581-98.jpg",
+      "pie": "Varanasi, India, 2018."
     },
     {
       "archivo": "foto-1794860049274-16.jpg",
@@ -184,6 +196,10 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794860039538-19.jpg",
       "pie": "Badalona, 17 de diciembre de 2025. Un residente del B9 abandona el edificio durante el desalojo, con gesto abatido y confuso, sin saber adónde ir ni qué opciones le quedan."
+    },
+    {
+      "archivo": "foto-1795465541385-97.jpg",
+      "pie": "Shibuya, Tokio, 2025."
     },
     {
       "archivo": "foto-1794862356675-54.jpg",
@@ -254,6 +270,10 @@ window.CONTENIDO = {
       "pie": "Barcelona Culinary Hub, L'Hospitalet de Llobregat, 24 de marzo de 2026. Martín Berasategui, el president Salvador Illa y otras autoridades prueban elaboraciones durante la presentación de la alianza de la escuela con el cocinero."
     },
     {
+      "archivo": "foto-1795465793584-101.jpg",
+      "pie": "Kioto, Japón, 2025."
+    },
+    {
       "archivo": "foto-1794920876090-148.jpg",
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. Con gesto de extrañeza y sin saber bien qué le han hecho, una mujer se tapa la boca tras la consulta dental mientras atienden a otros pacientes."
     },
@@ -278,6 +298,10 @@ window.CONTENIDO = {
       "pie": "Región de Kédougou, Senegal, noviembre de 2026. Una dentista de la ONG Acción Senegal extrae una muela a una paciente que, con las manos sobre la cara, se sostiene el rostro entre la tensión y los nervios."
     },
     {
+      "archivo": "foto-1795465741443-99.jpg",
+      "pie": "Monte Fuji, Japón, 2025."
+    },
+    {
       "archivo": "foto-1794862382199-58.jpg",
       "pie": "Barcelona, 11 de noviembre de 2026. En la calle Balmes, un antidisturbio se abalanza sobre un manifestante caído en el suelo durante los disturbios de la noche de la huelga general."
     },
@@ -292,6 +316,14 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1794866159724-64.jpg",
       "pie": "Institut de Seguretat Pública de Catalunya, Mollet del Vallès, 10 de junio de 2025. Agentes de los Mossos d'Esquadra, policías locales y la Guardia Urbana durante una jornada de formación."
+    },
+    {
+      "archivo": "foto-1795465877380-103.jpg",
+      "pie": "Sudáfrica, 2024."
+    },
+    {
+      "archivo": "foto-1795465912965-104.jpg",
+      "pie": "Nara, Japón, 2025."
     },
     {
       "archivo": "foto-1794867197475-62.jpg",
@@ -388,38 +420,6 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795022320137-90.jpg",
       "pie": "Spotify Camp Nou, Barcelona, 10 de mayo de 2026. El Fútbol Club Barcelona y el Real Madrid aguardan la llegada de un córner en el Clásico (2-0) que coronó al Barça campeón de Liga."
-    },
-    {
-      "archivo": "foto-1795465541385-97.jpg",
-      "pie": "Shibuya, Tokio, 2025."
-    },
-    {
-      "archivo": "foto-1795465649581-98.jpg",
-      "pie": "Varanasi, India, 2018."
-    },
-    {
-      "archivo": "foto-1795465741443-99.jpg",
-      "pie": "Monte Fuji, Japón, 2025."
-    },
-    {
-      "archivo": "foto-1795465773870-100.jpg",
-      "pie": "Monte Fuji, Japón, 2025."
-    },
-    {
-      "archivo": "foto-1795465793584-101.jpg",
-      "pie": "Kioto, Japón, 2025."
-    },
-    {
-      "archivo": "foto-1795465835056-102.jpg",
-      "pie": "Álex Abrines, durante una sesión fotográfica para una campaña publicitaria en el Palau Blaugrana, Barcelona, 2025."
-    },
-    {
-      "archivo": "foto-1795465877380-103.jpg",
-      "pie": "Sudáfrica, 2024."
-    },
-    {
-      "archivo": "foto-1795465912965-104.jpg",
-      "pie": "Nara, Japón, 2025."
     },
     {
       "archivo": "foto-1795465939996-105.jpg",
