@@ -434,7 +434,7 @@ window.CONTENIDO = {
       "pie": "Japón, 2025."
     },
     {
-      "archivo": "foto-1795557452213-109.jpg",
+      "archivo": "foto-1795557624853-109.jpg",
       "pie": "Fira de Barcelona, Plaza de España, 24 de noviembre de 2026. Pedro Sánchez avanza hacia la salida entre la multitud tras su discurso en el mitin del PSOE, en plena campaña del 29-N. La pantalla del móvil refleja la euforia de los asistentes por fotografiarse con él."
     }
   ],
