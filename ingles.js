@@ -106,7 +106,8 @@ window.PIES_EN = {
 "foto-1795465912965-104.jpg": "Nara, Japan, 2025.",
 "foto-1795465939996-105.jpg": "Japan, 2025.",
 "foto-1795466000000-106.jpg": "Varanasi, India, 2018.",
-"foto-1795466200000-108.jpg": "Frenkie de Jong, 2024."
+"foto-1795466200000-108.jpg": "Frenkie de Jong, 2024.",
+"foto-1795557452213-109.jpg": "Fira de Barcelona, Plaza de España, 24 November 2026. Pedro Sánchez makes his way to the exit through the crowd after finishing his speech at the rally. The phone screen captures the attendees' excitement at getting a picture with him."
 };
 
 /* Página de info en inglés (mismos bloques y líneas que en contenido.js). Si cambias el texto en español, actualiza también este. */
