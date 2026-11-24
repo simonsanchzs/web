@@ -274,6 +274,10 @@ window.CONTENIDO = {
       "pie": "Barcelona Culinary Hub, L'Hospitalet de Llobregat, 24 de marzo de 2026. Martín Berasategui, el president Salvador Illa y otras autoridades prueban elaboraciones durante la presentación de la alianza de la escuela con el cocinero."
     },
     {
+      "archivo": "foto-1795557624853-109.jpg",
+      "pie": "Fira de Barcelona, Plaza de España, 24 de noviembre de 2026. Pedro Sánchez avanza hacia la salida entre la multitud tras su discurso en el mitin del PSOE, en plena campaña del 29-N. La pantalla del móvil refleja la euforia de los asistentes por fotografiarse con él."
+    },
+    {
       "archivo": "foto-1795465793584-101.jpg",
       "pie": "Kioto, Japón, 2025."
     },
@@ -432,10 +436,6 @@ window.CONTENIDO = {
     {
       "archivo": "foto-1795465939996-105.jpg",
       "pie": "Japón, 2025."
-    },
-    {
-      "archivo": "foto-1795557624853-109.jpg",
-      "pie": "Fira de Barcelona, Plaza de España, 24 de noviembre de 2026. Pedro Sánchez avanza hacia la salida entre la multitud tras su discurso en el mitin del PSOE, en plena campaña del 29-N. La pantalla del móvil refleja la euforia de los asistentes por fotografiarse con él."
     }
   ],
   "info": [
